@@ -1,0 +1,10 @@
+execute if score bastion settings matches 0 if score items chest_menu matches 2 run scoreboard players add spawnpoint_random settings 1
+execute if score bastion settings matches 0 if score items chest_menu matches 1 run scoreboard players remove spawnpoint_random settings 1
+execute if score bastion settings matches 1 if score items chest_menu matches 2 run scoreboard players add spawnpoint_bridge settings 1
+execute if score bastion settings matches 1 if score items chest_menu matches 1 run scoreboard players remove spawnpoint_bridge settings 1
+execute if score bastion settings matches 2 if score items chest_menu matches 2 run scoreboard players add spawnpoint_stables settings 1
+execute if score bastion settings matches 2 if score items chest_menu matches 1 run scoreboard players remove spawnpoint_stables settings 1
+execute if score bastion settings matches 3 if score items chest_menu matches 2 run scoreboard players add spawnpoint_treasure settings 1
+execute if score bastion settings matches 3 if score items chest_menu matches 1 run scoreboard players remove spawnpoint_treasure settings 1
+execute if score bastion settings matches 4 if score items chest_menu matches 2 run scoreboard players add spawnpoint_units settings 1
+execute if score bastion settings matches 4 if score items chest_menu matches 1 run scoreboard players remove spawnpoint_units settings 1
