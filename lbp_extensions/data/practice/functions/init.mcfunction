@@ -9,6 +9,7 @@ execute unless score spawnpoint_stables settings = spawnpoint_stables settings r
 execute unless score spawnpoint_treasure settings = spawnpoint_treasure settings run scoreboard players set spawnpoint_treasure settings 0
 execute unless score spawnpoint_units settings = spawnpoint_units settings run scoreboard players set spawnpoint_units settings 0
 execute unless score spawnpoint_random settings = spawnpoint_random settings run scoreboard players set spawnpoint_random settings 0
+execute unless score spawnpoint_custom settings = spawnpoint_custom settings run scoreboard players set spawnpoint_custom settings 1
 execute unless score tick_warp settings = tick_warp settings run scoreboard players set tick_warp settings 0
 execute unless score spawnpoint_dist settings = spawnpoint_dist settings run scoreboard players set spawnpoint_dist settings 0
 execute unless score practice_floor settings = practice_floor settings run scoreboard players set practice_floor settings 0
@@ -87,3 +88,38 @@ execute unless score ui practice = ui practice run scoreboard players set ui pra
 execute unless score id_piglins bastion.settings = id_piglins bastion.settings run scoreboard players set id_piglins bastion.settings 0
 
 scoreboard players set running bastion.temp 0
+
+# Initialize Custom Spawnpoint Pool scores
+execute unless score spawnpoint_bridge_c_chalice settings = spawnpoint_bridge_c_chalice settings run scoreboard players set spawnpoint_bridge_c_chalice settings 0
+execute unless score spawnpoint_bridge_c_lower_bridge settings = spawnpoint_bridge_c_lower_bridge settings run scoreboard players set spawnpoint_bridge_c_lower_bridge settings 0
+execute unless score spawnpoint_bridge_c_lower_back settings = spawnpoint_bridge_c_lower_back settings run scoreboard players set spawnpoint_bridge_c_lower_back settings 0
+execute unless score spawnpoint_bridge_c_back settings = spawnpoint_bridge_c_back settings run scoreboard players set spawnpoint_bridge_c_back settings 0
+execute unless score spawnpoint_bridge_c_left_rampart settings = spawnpoint_bridge_c_left_rampart settings run scoreboard players set spawnpoint_bridge_c_left_rampart settings 0
+execute unless score spawnpoint_bridge_c_right_rampart settings = spawnpoint_bridge_c_right_rampart settings run scoreboard players set spawnpoint_bridge_c_right_rampart settings 0
+execute unless score spawnpoint_bridge_c_top_left settings = spawnpoint_bridge_c_top_left settings run scoreboard players set spawnpoint_bridge_c_top_left settings 0
+execute unless score spawnpoint_bridge_c_top_right settings = spawnpoint_bridge_c_top_right settings run scoreboard players set spawnpoint_bridge_c_top_right settings 0
+execute unless score spawnpoint_bridge_c_left_wall settings = spawnpoint_bridge_c_left_wall settings run scoreboard players set spawnpoint_bridge_c_left_wall settings 0
+execute unless score spawnpoint_stables_c_top_stables settings = spawnpoint_stables_c_top_stables settings run scoreboard players set spawnpoint_stables_c_top_stables settings 0
+execute unless score spawnpoint_stables_c_bottom_stairs settings = spawnpoint_stables_c_bottom_stairs settings run scoreboard players set spawnpoint_stables_c_bottom_stairs settings 0
+execute unless score spawnpoint_stables_c_middle_stairs settings = spawnpoint_stables_c_middle_stairs settings run scoreboard players set spawnpoint_stables_c_middle_stairs settings 0
+execute unless score spawnpoint_stables_c_top_stairs settings = spawnpoint_stables_c_top_stairs settings run scoreboard players set spawnpoint_stables_c_top_stairs settings 0
+execute unless score spawnpoint_stables_c_backside_middle settings = spawnpoint_stables_c_backside_middle settings run scoreboard players set spawnpoint_stables_c_backside_middle settings 0
+execute unless score spawnpoint_stables_c_left_gap_bottom settings = spawnpoint_stables_c_left_gap_bottom settings run scoreboard players set spawnpoint_stables_c_left_gap_bottom settings 0
+execute unless score spawnpoint_stables_c_right_gap settings = spawnpoint_stables_c_right_gap settings run scoreboard players set spawnpoint_stables_c_right_gap settings 0
+execute unless score spawnpoint_stables_c_left_rampart settings = spawnpoint_stables_c_left_rampart settings run scoreboard players set spawnpoint_stables_c_left_rampart settings 0
+execute unless score spawnpoint_stables_c_middle_rampart settings = spawnpoint_stables_c_middle_rampart settings run scoreboard players set spawnpoint_stables_c_middle_rampart settings 0
+execute unless score spawnpoint_stables_c_right_rampart settings = spawnpoint_stables_c_right_rampart settings run scoreboard players set spawnpoint_stables_c_right_rampart settings 0
+execute unless score spawnpoint_treasure_c_lava_basin settings = spawnpoint_treasure_c_lava_basin settings run scoreboard players set spawnpoint_treasure_c_lava_basin settings 0
+execute unless score spawnpoint_treasure_c_ledge settings = spawnpoint_treasure_c_ledge settings run scoreboard players set spawnpoint_treasure_c_ledge settings 0
+execute unless score spawnpoint_treasure_c_top_lower settings = spawnpoint_treasure_c_top_lower settings run scoreboard players set spawnpoint_treasure_c_top_lower settings 0
+execute unless score spawnpoint_treasure_c_lower_treasure settings = spawnpoint_treasure_c_lower_treasure settings run scoreboard players set spawnpoint_treasure_c_lower_treasure settings 0
+execute unless score spawnpoint_treasure_c_left_rampart_top settings = spawnpoint_treasure_c_left_rampart_top settings run scoreboard players set spawnpoint_treasure_c_left_rampart_top settings 0
+execute unless score spawnpoint_treasure_c_right_rampart_top settings = spawnpoint_treasure_c_right_rampart_top settings run scoreboard players set spawnpoint_treasure_c_right_rampart_top settings 0
+execute unless score spawnpoint_units_c_bottom_stairs settings = spawnpoint_units_c_bottom_stairs settings run scoreboard players set spawnpoint_units_c_bottom_stairs settings 0
+execute unless score spawnpoint_units_c_middle_stairs settings = spawnpoint_units_c_middle_stairs settings run scoreboard players set spawnpoint_units_c_middle_stairs settings 0
+execute unless score spawnpoint_units_c_top_stairs settings = spawnpoint_units_c_top_stairs settings run scoreboard players set spawnpoint_units_c_top_stairs settings 0
+execute unless score spawnpoint_units_c_backside_main settings = spawnpoint_units_c_backside_main settings run scoreboard players set spawnpoint_units_c_backside_main settings 0
+execute unless score spawnpoint_units_c_backside_left settings = spawnpoint_units_c_backside_left settings run scoreboard players set spawnpoint_units_c_backside_left settings 0
+execute unless score spawnpoint_units_c_top settings = spawnpoint_units_c_top settings run scoreboard players set spawnpoint_units_c_top settings 0
+execute unless score spawnpoint_units_c_triple_chest settings = spawnpoint_units_c_triple_chest settings run scoreboard players set spawnpoint_units_c_triple_chest settings 0
+execute unless score spawnpoint_units_c_center_chest settings = spawnpoint_units_c_center_chest settings run scoreboard players set spawnpoint_units_c_center_chest settings 0

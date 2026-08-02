@@ -11,7 +11,9 @@ execute if score terrain settings matches 1 positioned 0 128 0 run function prac
 execute if score bastion settings matches 0 run scoreboard players set max bastion.rng 4
 execute if score bastion settings matches 0 run function bastionbuilder:internal/utils/rng/new_int
 execute if score bastion settings matches 0 run scoreboard players operation bastion_type bastion.temp = out bastion.rng
-execute if score bastion settings matches 1.. run scoreboard players operation bastion_type bastion.temp = bastion settings
+execute if score bastion settings matches 1..4 run scoreboard players operation bastion_type bastion.temp = bastion settings
+execute if score bastion settings matches 5 run function practice:_start/custom_pools_override
+
 
 # Get the bastion rotation
 function practice:_start/get_rotation

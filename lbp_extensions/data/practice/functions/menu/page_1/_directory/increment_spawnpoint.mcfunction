@@ -8,3 +8,6 @@ execute if score bastion settings matches 3 if score items chest_menu matches 2 
 execute if score bastion settings matches 3 if score items chest_menu matches 1 run scoreboard players remove spawnpoint_treasure settings 1
 execute if score bastion settings matches 4 if score items chest_menu matches 2 run scoreboard players add spawnpoint_units settings 1
 execute if score bastion settings matches 4 if score items chest_menu matches 1 run scoreboard players remove spawnpoint_units settings 1
+execute if score bastion settings matches 5 if score items chest_menu matches 2 run scoreboard players add spawnpoint_custom settings 1
+execute if score bastion settings matches 5 if score items chest_menu matches 1 run scoreboard players remove spawnpoint_custom settings 1
+
