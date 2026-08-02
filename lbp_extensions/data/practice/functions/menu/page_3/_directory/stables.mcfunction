@@ -8,6 +8,10 @@ execute if score selection chest_menu matches 4 if score items chest_menu matche
 execute if score selection chest_menu matches 4 if score items chest_menu matches 1 run scoreboard players remove stables_middle_rampart bastion.settings 1
 execute if score selection chest_menu matches 5 if score items chest_menu matches 2 run scoreboard players add stables_right_rampart bastion.settings 1
 execute if score selection chest_menu matches 5 if score items chest_menu matches 1 run scoreboard players remove stables_right_rampart bastion.settings 1
+execute if score selection chest_menu matches 7 if score items chest_menu matches 2 run scoreboard players add stables_guarantee_good_gap bastion.settings 1
+execute if score selection chest_menu matches 7 if score items chest_menu matches 1 run scoreboard players remove stables_guarantee_good_gap bastion.settings 1
+execute if score selection chest_menu matches 8 if score items chest_menu matches 2 run scoreboard players add stables_guarantee_triple bastion.settings 1
+execute if score selection chest_menu matches 8 if score items chest_menu matches 1 run scoreboard players remove stables_guarantee_triple bastion.settings 1
 
 execute if score stables_left_gap bastion.settings matches 2.. run scoreboard players set stables_left_gap bastion.settings -1
 execute if score stables_left_gap bastion.settings matches ..-2 run scoreboard players set stables_left_gap bastion.settings 1
@@ -19,3 +23,7 @@ execute if score stables_middle_rampart bastion.settings matches 3.. run scorebo
 execute if score stables_middle_rampart bastion.settings matches ..-2 run scoreboard players set stables_middle_rampart bastion.settings 2
 execute if score stables_right_rampart bastion.settings matches 3.. run scoreboard players set stables_right_rampart bastion.settings -1
 execute if score stables_right_rampart bastion.settings matches ..-2 run scoreboard players set stables_right_rampart bastion.settings 2
+execute if score stables_guarantee_good_gap bastion.settings matches 2.. run scoreboard players set stables_guarantee_good_gap bastion.settings 0
+execute if score stables_guarantee_good_gap bastion.settings matches ..-1 run scoreboard players set stables_guarantee_good_gap bastion.settings 1
+execute if score stables_guarantee_triple bastion.settings matches 2.. run scoreboard players set stables_guarantee_triple bastion.settings 0
+execute if score stables_guarantee_triple bastion.settings matches ..-1 run scoreboard players set stables_guarantee_triple bastion.settings 1
