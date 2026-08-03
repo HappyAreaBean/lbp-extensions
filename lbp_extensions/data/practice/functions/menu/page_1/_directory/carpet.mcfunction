@@ -40,6 +40,13 @@ execute if score selection chest_menu matches 1..2 if score is_shift_click chest
 execute if score selection chest_menu matches 1 if score items chest_menu matches 2 run scoreboard players add bastion settings 1
 execute if score selection chest_menu matches 1 if score items chest_menu matches 1 run scoreboard players remove bastion settings 1
 execute if score selection chest_menu matches 2 run function practice:menu/page_1/_directory/increment_spawnpoint
+# Shift-click handling for Spawnpoint Distance (immediately sets to Custom and opens Page 15)
+execute if score selection chest_menu matches 3 if score is_shift_click chest_menu matches 1 run scoreboard players set spawnpoint_dist settings 6
+execute if score selection chest_menu matches 3 if score is_shift_click chest_menu matches 1 run scoreboard players set prev_page chest_menu 1
+execute if score selection chest_menu matches 3 if score is_shift_click chest_menu matches 1 run scoreboard players set page chest_menu 15
+execute if score selection chest_menu matches 3 if score is_shift_click chest_menu matches 1 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
+execute if score selection chest_menu matches 3 if score is_shift_click chest_menu matches 1 run scoreboard players set selection chest_menu 0
+
 execute if score selection chest_menu matches 3 if score items chest_menu matches 2 run scoreboard players add spawnpoint_dist settings 1
 execute if score selection chest_menu matches 3 if score items chest_menu matches 1 run scoreboard players remove spawnpoint_dist settings 1
 execute if score selection chest_menu matches 4 if score items chest_menu matches 2 run scoreboard players add terrain settings 1
@@ -73,8 +80,8 @@ execute if score random_gold bastion.settings matches 3.. run scoreboard players
 execute if score random_gold bastion.settings matches ..-1 run scoreboard players set random_gold bastion.settings 2
 execute if score terrain settings matches 2.. run scoreboard players set terrain settings 0
 execute if score terrain settings matches ..-1 run scoreboard players set terrain settings 1
-execute if score spawnpoint_dist settings matches 6.. run scoreboard players set spawnpoint_dist settings 0
-execute if score spawnpoint_dist settings matches ..-1 run scoreboard players set spawnpoint_dist settings 5
+execute if score spawnpoint_dist settings matches 7.. run scoreboard players set spawnpoint_dist settings 0
+execute if score spawnpoint_dist settings matches ..-1 run scoreboard players set spawnpoint_dist settings 6
 execute if score piedar settings matches 3.. run scoreboard players set piedar settings 0
 execute if score piedar settings matches ..-1 run scoreboard players set piedar settings 2
 execute if score piedar_dist settings matches 4.. run scoreboard players set piedar_dist settings 0

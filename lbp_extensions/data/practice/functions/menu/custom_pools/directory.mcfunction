@@ -531,3 +531,317 @@ execute if score page chest_menu matches 14 if score sum bastion.temp matches 8 
 
 # Selection 11: Back (Slot 22)
 execute if score page chest_menu matches 10..19 if score selection chest_menu matches 11 run scoreboard players operation page chest_menu = prev_page chest_menu
+
+# Page 15: Custom Spawnpoint Distance Selection Handlers
+
+# Selection 1: 0 Blocks (Slot 0)
+execute if score page chest_menu matches 15 if score selection chest_menu matches 1 run scoreboard players add spawnpoint_dist_c_0 settings 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_0 settings matches 2.. run scoreboard players set spawnpoint_dist_c_0 settings 0
+execute if score page chest_menu matches 15 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_0 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_25 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_50 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_75 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_100 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score sum bastion.temp matches 5 run scoreboard players set spawnpoint_dist_c_0 settings 0
+
+# Selection 2: 25 Blocks (Slot 1)
+execute if score page chest_menu matches 15 if score selection chest_menu matches 2 run scoreboard players add spawnpoint_dist_c_25 settings 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_25 settings matches 2.. run scoreboard players set spawnpoint_dist_c_25 settings 0
+execute if score page chest_menu matches 15 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_0 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_25 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_50 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_75 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_100 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score sum bastion.temp matches 5 run scoreboard players set spawnpoint_dist_c_25 settings 0
+
+# Selection 3: 50 Blocks (Slot 2)
+execute if score page chest_menu matches 15 if score selection chest_menu matches 3 run scoreboard players add spawnpoint_dist_c_50 settings 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_50 settings matches 2.. run scoreboard players set spawnpoint_dist_c_50 settings 0
+execute if score page chest_menu matches 15 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_0 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_25 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_50 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_75 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_100 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score sum bastion.temp matches 5 run scoreboard players set spawnpoint_dist_c_50 settings 0
+
+# Selection 4: 75 Blocks (Slot 3)
+execute if score page chest_menu matches 15 if score selection chest_menu matches 4 run scoreboard players add spawnpoint_dist_c_75 settings 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_75 settings matches 2.. run scoreboard players set spawnpoint_dist_c_75 settings 0
+execute if score page chest_menu matches 15 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_0 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_25 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_50 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_75 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_100 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score sum bastion.temp matches 5 run scoreboard players set spawnpoint_dist_c_75 settings 0
+
+# Selection 5: 100 Blocks (Slot 4)
+execute if score page chest_menu matches 15 if score selection chest_menu matches 5 run scoreboard players add spawnpoint_dist_c_100 settings 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_100 settings matches 2.. run scoreboard players set spawnpoint_dist_c_100 settings 0
+execute if score page chest_menu matches 15 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_0 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_25 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_50 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_75 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score spawnpoint_dist_c_100 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 15 if score sum bastion.temp matches 5 run scoreboard players set spawnpoint_dist_c_100 settings 0
+
+# Selection 11: Back (Slot 22)
+execute if score page chest_menu matches 15 if score selection chest_menu matches 11 run scoreboard players set page chest_menu 1
+execute if score page chest_menu matches 15 if score selection chest_menu matches 11 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
+
+# Page 16: Custom Bastion Rotation Selection Handlers
+
+# Selection 1: 0 Degrees (Slot 0)
+execute if score page chest_menu matches 16 if score selection chest_menu matches 1 run scoreboard players add bastion_rot_c_0 practice 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_0 practice matches 2.. run scoreboard players set bastion_rot_c_0 practice 0
+execute if score page chest_menu matches 16 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 16 if score bastion_rot_c_0 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_90 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_180 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_270 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score sum bastion.temp matches 4 run scoreboard players set bastion_rot_c_0 practice 0
+
+# Selection 2: 90 Degrees (Slot 1)
+execute if score page chest_menu matches 16 if score selection chest_menu matches 2 run scoreboard players add bastion_rot_c_90 practice 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_90 practice matches 2.. run scoreboard players set bastion_rot_c_90 practice 0
+execute if score page chest_menu matches 16 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 16 if score bastion_rot_c_0 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_90 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_180 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_270 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score sum bastion.temp matches 4 run scoreboard players set bastion_rot_c_90 practice 0
+
+# Selection 3: 180 Degrees (Slot 2)
+execute if score page chest_menu matches 16 if score selection chest_menu matches 3 run scoreboard players add bastion_rot_c_180 practice 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_180 practice matches 2.. run scoreboard players set bastion_rot_c_180 practice 0
+execute if score page chest_menu matches 16 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 16 if score bastion_rot_c_0 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_90 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_180 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_270 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score sum bastion.temp matches 4 run scoreboard players set bastion_rot_c_180 practice 0
+
+# Selection 4: 270 Degrees (Slot 3)
+execute if score page chest_menu matches 16 if score selection chest_menu matches 4 run scoreboard players add bastion_rot_c_270 practice 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_270 practice matches 2.. run scoreboard players set bastion_rot_c_270 practice 0
+execute if score page chest_menu matches 16 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 16 if score bastion_rot_c_0 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_90 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_180 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score bastion_rot_c_270 practice matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 16 if score sum bastion.temp matches 4 run scoreboard players set bastion_rot_c_270 practice 0
+
+# Selection 11: Back (Slot 22)
+execute if score page chest_menu matches 16 if score selection chest_menu matches 11 run scoreboard players set page chest_menu 4
+execute if score page chest_menu matches 16 if score selection chest_menu matches 11 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
+
+# Page 17: Custom Housing Left Rampart Selection Handlers
+
+# Selection 1: Triple Chest (Slot 0)
+execute if score page chest_menu matches 17 if score selection chest_menu matches 1 run scoreboard players add units_left_rampart_c_triple bastion.settings 1
+execute if score page chest_menu matches 17 if score units_left_rampart_c_triple bastion.settings matches 2.. run scoreboard players set units_left_rampart_c_triple bastion.settings 0
+execute if score page chest_menu matches 17 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 17 if score units_left_rampart_c_triple bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 17 if score units_left_rampart_c_single bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 17 if score units_left_rampart_c_ruin bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 17 if score sum bastion.temp matches 3 run scoreboard players set units_left_rampart_c_triple bastion.settings 0
+
+# Selection 2: Single Chest (Slot 1)
+execute if score page chest_menu matches 17 if score selection chest_menu matches 2 run scoreboard players add units_left_rampart_c_single bastion.settings 1
+execute if score page chest_menu matches 17 if score units_left_rampart_c_single bastion.settings matches 2.. run scoreboard players set units_left_rampart_c_single bastion.settings 0
+execute if score page chest_menu matches 17 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 17 if score units_left_rampart_c_triple bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 17 if score units_left_rampart_c_single bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 17 if score units_left_rampart_c_ruin bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 17 if score sum bastion.temp matches 3 run scoreboard players set units_left_rampart_c_single bastion.settings 0
+
+# Selection 3: Ruin (Slot 2)
+execute if score page chest_menu matches 17 if score selection chest_menu matches 3 run scoreboard players add units_left_rampart_c_ruin bastion.settings 1
+execute if score page chest_menu matches 17 if score units_left_rampart_c_ruin bastion.settings matches 2.. run scoreboard players set units_left_rampart_c_ruin bastion.settings 0
+execute if score page chest_menu matches 17 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 17 if score units_left_rampart_c_triple bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 17 if score units_left_rampart_c_single bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 17 if score units_left_rampart_c_ruin bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 17 if score sum bastion.temp matches 3 run scoreboard players set units_left_rampart_c_ruin bastion.settings 0
+
+# Selection 11: Back (Slot 22)
+execute if score page chest_menu matches 17 if score selection chest_menu matches 11 run scoreboard players set page chest_menu 3
+execute if score page chest_menu matches 17 if score selection chest_menu matches 11 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
+
+# Page 18: Custom Center Treasure Selection Handlers
+
+# Selection 1: Hashtag (Slot 0)
+execute if score page chest_menu matches 18 if score selection chest_menu matches 1 run scoreboard players add treasure_center_c_hashtag bastion.settings 1
+execute if score page chest_menu matches 18 if score treasure_center_c_hashtag bastion.settings matches 2.. run scoreboard players set treasure_center_c_hashtag bastion.settings 0
+execute if score page chest_menu matches 18 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 18 if score treasure_center_c_hashtag bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score treasure_center_c_double bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score treasure_center_c_cage bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score treasure_center_c_1812 bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score sum bastion.temp matches 4 run scoreboard players set treasure_center_c_hashtag bastion.settings 0
+
+# Selection 2: Double Chest (Slot 1)
+execute if score page chest_menu matches 18 if score selection chest_menu matches 2 run scoreboard players add treasure_center_c_double bastion.settings 1
+execute if score page chest_menu matches 18 if score treasure_center_c_double bastion.settings matches 2.. run scoreboard players set treasure_center_c_double bastion.settings 0
+execute if score page chest_menu matches 18 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 18 if score treasure_center_c_hashtag bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score treasure_center_c_double bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score treasure_center_c_cage bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score treasure_center_c_1812 bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score sum bastion.temp matches 4 run scoreboard players set treasure_center_c_double bastion.settings 0
+
+# Selection 3: Cage (Slot 2)
+execute if score page chest_menu matches 18 if score selection chest_menu matches 3 run scoreboard players add treasure_center_c_cage bastion.settings 1
+execute if score page chest_menu matches 18 if score treasure_center_c_cage bastion.settings matches 2.. run scoreboard players set treasure_center_c_cage bastion.settings 0
+execute if score page chest_menu matches 18 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 18 if score treasure_center_c_hashtag bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score treasure_center_c_double bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score treasure_center_c_cage bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score treasure_center_c_1812 bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score sum bastion.temp matches 4 run scoreboard players set treasure_center_c_cage bastion.settings 0
+
+# Selection 4: 1812 (Slot 3)
+execute if score page chest_menu matches 18 if score selection chest_menu matches 4 run scoreboard players add treasure_center_c_1812 bastion.settings 1
+execute if score page chest_menu matches 18 if score treasure_center_c_1812 bastion.settings matches 2.. run scoreboard players set treasure_center_c_1812 bastion.settings 0
+execute if score page chest_menu matches 18 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 18 if score treasure_center_c_hashtag bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score treasure_center_c_double bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score treasure_center_c_cage bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score treasure_center_c_1812 bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 18 if score sum bastion.temp matches 4 run scoreboard players set treasure_center_c_1812 bastion.settings 0
+
+# Selection 11: Back (Slot 22)
+execute if score page chest_menu matches 18 if score selection chest_menu matches 11 run scoreboard players set page chest_menu 3
+execute if score page chest_menu matches 18 if score selection chest_menu matches 11 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
+
+
+# Page 19: Custom Center Wall Selection Handlers
+
+# Selection 1: BasaltE (Slot 0)
+execute if score page chest_menu matches 19 if score selection chest_menu matches 1 run scoreboard players add treasure_wall_c_basalte bastion.settings 1
+execute if score page chest_menu matches 19 if score treasure_wall_c_basalte bastion.settings matches 2.. run scoreboard players set treasure_wall_c_basalte bastion.settings 0
+execute if score page chest_menu matches 19 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 19 if score treasure_wall_c_basalte bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 19 if score treasure_wall_c_throne bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 19 if score treasure_wall_c_lava bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 19 if score sum bastion.temp matches 3 run scoreboard players set treasure_wall_c_basalte bastion.settings 0
+
+# Selection 2: Throne (Slot 1)
+execute if score page chest_menu matches 19 if score selection chest_menu matches 2 run scoreboard players add treasure_wall_c_throne bastion.settings 1
+execute if score page chest_menu matches 19 if score treasure_wall_c_throne bastion.settings matches 2.. run scoreboard players set treasure_wall_c_throne bastion.settings 0
+execute if score page chest_menu matches 19 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 19 if score treasure_wall_c_basalte bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 19 if score treasure_wall_c_throne bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 19 if score treasure_wall_c_lava bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 19 if score sum bastion.temp matches 3 run scoreboard players set treasure_wall_c_throne bastion.settings 0
+
+# Selection 3: Lava (Slot 2)
+execute if score page chest_menu matches 19 if score selection chest_menu matches 3 run scoreboard players add treasure_wall_c_lava bastion.settings 1
+execute if score page chest_menu matches 19 if score treasure_wall_c_lava bastion.settings matches 2.. run scoreboard players set treasure_wall_c_lava bastion.settings 0
+execute if score page chest_menu matches 19 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 19 if score treasure_wall_c_basalte bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 19 if score treasure_wall_c_throne bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 19 if score treasure_wall_c_lava bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 19 if score sum bastion.temp matches 3 run scoreboard players set treasure_wall_c_lava bastion.settings 0
+
+# Selection 11: Back (Slot 22)
+execute if score page chest_menu matches 19 if score selection chest_menu matches 11 run scoreboard players set page chest_menu 3
+execute if score page chest_menu matches 19 if score selection chest_menu matches 11 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
+
+# Page 20: Custom Stables Left Rampart Pool Selection Handlers
+# Selection 1: Triple Chest (Slot 0)
+execute if score page chest_menu matches 20 if score selection chest_menu matches 1 run scoreboard players add stables_left_rampart_c_triple bastion.settings 1
+execute if score page chest_menu matches 20 if score stables_left_rampart_c_triple bastion.settings matches 2.. run scoreboard players set stables_left_rampart_c_triple bastion.settings 0
+execute if score page chest_menu matches 20 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 20 if score stables_left_rampart_c_triple bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 20 if score stables_left_rampart_c_lantern bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 20 if score stables_left_rampart_c_single bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 20 if score sum bastion.temp matches 3 run scoreboard players set stables_left_rampart_c_triple bastion.settings 0
+
+# Selection 2: Lantern Chest (Slot 1)
+execute if score page chest_menu matches 20 if score selection chest_menu matches 2 run scoreboard players add stables_left_rampart_c_lantern bastion.settings 1
+execute if score page chest_menu matches 20 if score stables_left_rampart_c_lantern bastion.settings matches 2.. run scoreboard players set stables_left_rampart_c_lantern bastion.settings 0
+execute if score page chest_menu matches 20 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 20 if score stables_left_rampart_c_triple bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 20 if score stables_left_rampart_c_lantern bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 20 if score stables_left_rampart_c_single bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 20 if score sum bastion.temp matches 3 run scoreboard players set stables_left_rampart_c_lantern bastion.settings 0
+
+# Selection 3: Single Chest (Slot 2)
+execute if score page chest_menu matches 20 if score selection chest_menu matches 3 run scoreboard players add stables_left_rampart_c_single bastion.settings 1
+execute if score page chest_menu matches 20 if score stables_left_rampart_c_single bastion.settings matches 2.. run scoreboard players set stables_left_rampart_c_single bastion.settings 0
+execute if score page chest_menu matches 20 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 20 if score stables_left_rampart_c_triple bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 20 if score stables_left_rampart_c_lantern bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 20 if score stables_left_rampart_c_single bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 20 if score sum bastion.temp matches 3 run scoreboard players set stables_left_rampart_c_single bastion.settings 0
+
+execute if score page chest_menu matches 20 if score selection chest_menu matches 11 run scoreboard players set page chest_menu 3
+execute if score page chest_menu matches 20 if score selection chest_menu matches 11 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
+
+# Page 21: Custom Stables Middle Rampart Pool Selection Handlers
+# Selection 1: Triple Chest (Slot 0)
+execute if score page chest_menu matches 21 if score selection chest_menu matches 1 run scoreboard players add stables_middle_rampart_c_triple bastion.settings 1
+execute if score page chest_menu matches 21 if score stables_middle_rampart_c_triple bastion.settings matches 2.. run scoreboard players set stables_middle_rampart_c_triple bastion.settings 0
+execute if score page chest_menu matches 21 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 21 if score stables_middle_rampart_c_triple bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 21 if score stables_middle_rampart_c_lantern bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 21 if score stables_middle_rampart_c_single bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 21 if score sum bastion.temp matches 3 run scoreboard players set stables_middle_rampart_c_triple bastion.settings 0
+
+# Selection 2: Lantern Chest (Slot 1)
+execute if score page chest_menu matches 21 if score selection chest_menu matches 2 run scoreboard players add stables_middle_rampart_c_lantern bastion.settings 1
+execute if score page chest_menu matches 21 if score stables_middle_rampart_c_lantern bastion.settings matches 2.. run scoreboard players set stables_middle_rampart_c_lantern bastion.settings 0
+execute if score page chest_menu matches 21 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 21 if score stables_middle_rampart_c_triple bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 21 if score stables_middle_rampart_c_lantern bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 21 if score stables_middle_rampart_c_single bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 21 if score sum bastion.temp matches 3 run scoreboard players set stables_middle_rampart_c_lantern bastion.settings 0
+
+# Selection 3: Single Chest (Slot 2)
+execute if score page chest_menu matches 21 if score selection chest_menu matches 3 run scoreboard players add stables_middle_rampart_c_single bastion.settings 1
+execute if score page chest_menu matches 21 if score stables_middle_rampart_c_single bastion.settings matches 2.. run scoreboard players set stables_middle_rampart_c_single bastion.settings 0
+execute if score page chest_menu matches 21 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 21 if score stables_middle_rampart_c_triple bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 21 if score stables_middle_rampart_c_lantern bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 21 if score stables_middle_rampart_c_single bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 21 if score sum bastion.temp matches 3 run scoreboard players set stables_middle_rampart_c_single bastion.settings 0
+
+execute if score page chest_menu matches 21 if score selection chest_menu matches 11 run scoreboard players set page chest_menu 3
+execute if score page chest_menu matches 21 if score selection chest_menu matches 11 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
+
+# Page 22: Custom Stables Right Rampart Pool Selection Handlers
+# Selection 1: Triple Chest (Slot 0)
+execute if score page chest_menu matches 22 if score selection chest_menu matches 1 run scoreboard players add stables_right_rampart_c_triple bastion.settings 1
+execute if score page chest_menu matches 22 if score stables_right_rampart_c_triple bastion.settings matches 2.. run scoreboard players set stables_right_rampart_c_triple bastion.settings 0
+execute if score page chest_menu matches 22 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 22 if score stables_right_rampart_c_triple bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 22 if score stables_right_rampart_c_lantern bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 22 if score stables_right_rampart_c_single bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 22 if score sum bastion.temp matches 3 run scoreboard players set stables_right_rampart_c_triple bastion.settings 0
+
+# Selection 2: Lantern Chest (Slot 1)
+execute if score page chest_menu matches 22 if score selection chest_menu matches 2 run scoreboard players add stables_right_rampart_c_lantern bastion.settings 1
+execute if score page chest_menu matches 22 if score stables_right_rampart_c_lantern bastion.settings matches 2.. run scoreboard players set stables_right_rampart_c_lantern bastion.settings 0
+execute if score page chest_menu matches 22 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 22 if score stables_right_rampart_c_triple bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 22 if score stables_right_rampart_c_lantern bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 22 if score stables_right_rampart_c_single bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 22 if score sum bastion.temp matches 3 run scoreboard players set stables_right_rampart_c_lantern bastion.settings 0
+
+# Selection 3: Single Chest (Slot 2)
+execute if score page chest_menu matches 22 if score selection chest_menu matches 3 run scoreboard players add stables_right_rampart_c_single bastion.settings 1
+execute if score page chest_menu matches 22 if score stables_right_rampart_c_single bastion.settings matches 2.. run scoreboard players set stables_right_rampart_c_single bastion.settings 0
+execute if score page chest_menu matches 22 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 22 if score stables_right_rampart_c_triple bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 22 if score stables_right_rampart_c_lantern bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+# Refactored: check single matches 1, add to sum, and set to 0 if sum is 3
+execute if score page chest_menu matches 22 if score stables_right_rampart_c_single bastion.settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 22 if score sum bastion.temp matches 3 run scoreboard players set stables_right_rampart_c_single bastion.settings 0
+
+execute if score page chest_menu matches 22 if score selection chest_menu matches 11 run scoreboard players set page chest_menu 3
+execute if score page chest_menu matches 22 if score selection chest_menu matches 11 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
