@@ -15,8 +15,8 @@ execute if score selection chest_menu matches 6 run scoreboard players set page 
 execute if score selection chest_menu matches 7 run scoreboard players set page chest_menu 1
 
 # Reset clipping scores
-execute if score tick_warp settings matches 5.. run scoreboard players set tick_warp settings 0
-execute if score tick_warp settings matches ..-1 run scoreboard players set tick_warp settings 4
+execute if score tick_warp settings matches 13.. run scoreboard players set tick_warp settings 0
+execute if score tick_warp settings matches ..-1 run scoreboard players set tick_warp settings 12
 execute if score rerun_terrain settings matches 2.. run scoreboard players set rerun_terrain settings 0
 execute if score rerun_terrain settings matches ..-1 run scoreboard players set rerun_terrain settings 1
 execute if score hoglins bastion.settings matches 2.. run scoreboard players set hoglins bastion.settings 0

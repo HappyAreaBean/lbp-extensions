@@ -11,7 +11,9 @@ execute if score terrain settings matches 1 positioned 0 128 0 run function prac
 execute if score bastion settings matches 0 run scoreboard players set max bastion.rng 4
 execute if score bastion settings matches 0 run function bastionbuilder:internal/utils/rng/new_int
 execute if score bastion settings matches 0 run scoreboard players operation bastion_type bastion.temp = out bastion.rng
-execute if score bastion settings matches 1.. run scoreboard players operation bastion_type bastion.temp = bastion settings
+execute if score bastion settings matches 1..4 run scoreboard players operation bastion_type bastion.temp = bastion settings
+execute if score bastion settings matches 5 run function practice:_start/custom_pools_override
+
 
 # Get the bastion rotation
 function practice:_start/get_rotation
@@ -26,6 +28,12 @@ execute if score terrain settings matches 0 run function practice:_start/terrain
 execute if score rerun_terrain settings matches 1 run function practice:_start/terrain/save
 
 # Generate the bastion
+execute if score units_left_rampart bastion.settings matches 3 run function practice:_start/units_left_rampart_override
+execute if score treasure_center bastion.settings matches 4 run function practice:_start/treasure_center_override
+execute if score treasure_wall bastion.settings matches 3 run function practice:_start/treasure_wall_override
+execute if score stables_left_rampart bastion.settings matches 3 run function practice:_start/stables_left_rampart_override
+execute if score stables_middle_rampart bastion.settings matches 3 run function practice:_start/stables_middle_rampart_override
+execute if score stables_right_rampart bastion.settings matches 3 run function practice:_start/stables_right_rampart_override
 execute if score stables_guarantee_good_gap bastion.settings matches 0 run function practice:_start/stables_gap_override
 execute if score stables_guarantee_triple bastion.settings matches 1 run function practice:_start/stables_rampart_override
 execute if score bridge_guarantee_triple bastion.settings matches 1 run function practice:_start/bridge_override
@@ -36,6 +44,21 @@ execute if score terrain settings matches 1 positioned 0 128 0 run function bast
 execute if score stables_guarantee_good_gap bastion.settings matches 0 run function practice:_start/stables_gap_restore
 execute if score stables_guarantee_triple bastion.settings matches 1 run function practice:_start/stables_rampart_restore
 execute if score bridge_guarantee_triple bastion.settings matches 1 run function practice:_start/bridge_restore
+execute if score orig_treasure_center bastion.temp matches 0..4 run scoreboard players operation treasure_center bastion.settings = orig_treasure_center bastion.temp
+execute if score orig_treasure_center bastion.temp matches 0..4 run scoreboard players reset orig_treasure_center bastion.temp
+execute if score orig_treasure_wall bastion.temp matches 0..3 run scoreboard players operation treasure_wall bastion.settings = orig_treasure_wall bastion.temp
+execute if score orig_treasure_wall bastion.temp matches 0..3 run scoreboard players reset orig_treasure_wall bastion.temp
+execute if score orig_left_rampart bastion.temp matches 0..3 run scoreboard players operation units_left_rampart bastion.settings = orig_left_rampart bastion.temp
+execute if score orig_left_rampart bastion.temp matches 0..3 run scoreboard players reset orig_left_rampart bastion.temp
+execute if score orig_c_stables_left_rampart bastion.temp matches 0..3 run scoreboard players operation stables_left_rampart bastion.settings = orig_c_stables_left_rampart bastion.temp
+execute if score orig_c_stables_left_rampart bastion.temp matches 0..3 run scoreboard players operation s_s_left_rampart bastion.temp = orig_c_stables_left_rampart bastion.temp
+execute if score orig_c_stables_left_rampart bastion.temp matches 0..3 run scoreboard players reset orig_c_stables_left_rampart bastion.temp
+execute if score orig_c_stables_middle_rampart bastion.temp matches 0..3 run scoreboard players operation stables_middle_rampart bastion.settings = orig_c_stables_middle_rampart bastion.temp
+execute if score orig_c_stables_middle_rampart bastion.temp matches 0..3 run scoreboard players operation s_s_middle_rampart bastion.temp = orig_c_stables_middle_rampart bastion.temp
+execute if score orig_c_stables_middle_rampart bastion.temp matches 0..3 run scoreboard players reset orig_c_stables_middle_rampart bastion.temp
+execute if score orig_c_stables_right_rampart bastion.temp matches 0..3 run scoreboard players operation stables_right_rampart bastion.settings = orig_c_stables_right_rampart bastion.temp
+execute if score orig_c_stables_right_rampart bastion.temp matches 0..3 run scoreboard players operation s_s_right_rampart bastion.temp = orig_c_stables_right_rampart bastion.temp
+execute if score orig_c_stables_right_rampart bastion.temp matches 0..3 run scoreboard players reset orig_c_stables_right_rampart bastion.temp
 
 
 
