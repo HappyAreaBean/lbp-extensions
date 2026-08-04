@@ -9,7 +9,7 @@ A datapack to extend the features of llama's bastion practice map.
 - Guarantee triple rampart and good gap functions for bridge and stables
 - Enchant glint to indicate option is enabled
 - Dimmed item colors to indicate overridden settings
-- Choosing the randomized option pool for every setting this applies to
+- Choosing the randomized option pool for every setting that applies
 - All piedar cases (with customization options?) (Not done)
 - Guaranteed 5 obsidian and 3 iron chests across the whole bastion (Not done)
 - Custom spawn locations (Not done)
