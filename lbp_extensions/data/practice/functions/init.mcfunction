@@ -6,6 +6,7 @@ execute unless score piedar settings = piedar settings run scoreboard players se
 execute unless score rerun_terrain settings = rerun_terrain settings run scoreboard players set rerun_terrain settings 0
 execute unless score spawnpoint_bridge settings = spawnpoint_bridge settings run scoreboard players set spawnpoint_bridge settings 0
 execute unless score spawnpoint_stables settings = spawnpoint_stables settings run scoreboard players set spawnpoint_stables settings 0
+execute unless score prev_settings_page chest_menu = prev_settings_page chest_menu run scoreboard players set prev_settings_page chest_menu 1
 execute unless score spawnpoint_treasure settings = spawnpoint_treasure settings run scoreboard players set spawnpoint_treasure settings 0
 execute unless score spawnpoint_units settings = spawnpoint_units settings run scoreboard players set spawnpoint_units settings 0
 execute unless score spawnpoint_random settings = spawnpoint_random settings run scoreboard players set spawnpoint_random settings 0

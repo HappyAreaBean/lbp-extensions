@@ -57,6 +57,7 @@ execute if score selection chest_menu matches 6 if score items chest_menu matche
 execute if score selection chest_menu matches 6 if score items chest_menu matches 1 run scoreboard players remove piedar settings 1
 execute if score selection chest_menu matches 7 if score items chest_menu matches 2 run scoreboard players add piedar_dist settings 1
 execute if score selection chest_menu matches 7 if score items chest_menu matches 1 run scoreboard players remove piedar_dist settings 1
+execute if score selection chest_menu matches 8 unless score bastion settings matches 5 run scoreboard players set prev_settings_page chest_menu 1
 execute if score selection chest_menu matches 8 unless score bastion settings matches 5 run scoreboard players set page chest_menu 3
 execute if score selection chest_menu matches 9 run scoreboard players set page chest_menu 2
 execute if score selection chest_menu matches 10 run scoreboard players set page chest_menu 4
