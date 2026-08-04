@@ -22,7 +22,7 @@ execute if score page chest_menu matches 10 run replaceitem entity @s enderchest
 execute if score page chest_menu matches 10 run replaceitem entity @s enderchest.14 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 10 run replaceitem entity @s enderchest.15 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 10 run replaceitem entity @s enderchest.16 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
-execute if score page chest_menu matches 10 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:10,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to the previous page","italic":false,"color":"white"}]']},HideFlags:2}
+execute if score page chest_menu matches 10 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:10,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to","italic":false,"color":"white"}]','[{"text":"the previous page","italic":false,"color":"white"}]']},HideFlags:2}
 
 # Page 11: Bridge Custom Spawnpoints
 execute if score page chest_menu matches 11 if score spawnpoint_bridge_c_chalice settings matches 0 run replaceitem entity @s enderchest.0 firework_star{Enchantments:[{}],menu:1,page:11,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"Chalice","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gold","italic":false}','{"text":"Disabled","color":"gray","italic":false}']},HideFlags:35}
@@ -51,7 +51,7 @@ execute if score page chest_menu matches 11 run replaceitem entity @s enderchest
 execute if score page chest_menu matches 11 run replaceitem entity @s enderchest.14 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 11 run replaceitem entity @s enderchest.15 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 11 run replaceitem entity @s enderchest.16 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
-execute if score page chest_menu matches 11 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:11,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to the previous page","italic":false,"color":"white"}]']},HideFlags:2}
+execute if score page chest_menu matches 11 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:11,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to","italic":false,"color":"white"}]','[{"text":"the previous page","italic":false,"color":"white"}]']},HideFlags:2}
 
 # Page 12: Stables Custom Spawnpoints
 execute if score page chest_menu matches 12 if score spawnpoint_stables_c_top_stables settings matches 0 run replaceitem entity @s enderchest.0 firework_star{Enchantments:[{}],menu:1,page:12,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"Top Stables","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gold","italic":false}','{"text":"Disabled","color":"gray","italic":false}']},HideFlags:35}
@@ -81,7 +81,7 @@ execute if score page chest_menu matches 12 run replaceitem entity @s enderchest
 execute if score page chest_menu matches 12 run replaceitem entity @s enderchest.14 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 12 run replaceitem entity @s enderchest.15 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 12 run replaceitem entity @s enderchest.16 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
-execute if score page chest_menu matches 12 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:12,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to the previous page","italic":false,"color":"white"}]']},HideFlags:2}
+execute if score page chest_menu matches 12 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:12,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to","italic":false,"color":"white"}]','[{"text":"the previous page","italic":false,"color":"white"}]']},HideFlags:2}
 
 # Page 13: Treasure Custom Spawnpoints
 execute if score page chest_menu matches 13 if score spawnpoint_treasure_c_lava_basin settings matches 0 run replaceitem entity @s enderchest.0 firework_star{Enchantments:[{}],menu:1,page:13,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"Lava Basin","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gold","italic":false}','{"text":"Disabled","color":"gray","italic":false}']},HideFlags:35}
@@ -107,7 +107,7 @@ execute if score page chest_menu matches 13 run replaceitem entity @s enderchest
 execute if score page chest_menu matches 13 run replaceitem entity @s enderchest.14 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 13 run replaceitem entity @s enderchest.15 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 13 run replaceitem entity @s enderchest.16 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
-execute if score page chest_menu matches 13 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:13,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to the previous page","italic":false,"color":"white"}]']},HideFlags:2}
+execute if score page chest_menu matches 13 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:13,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to","italic":false,"color":"white"}]','[{"text":"the previous page","italic":false,"color":"white"}]']},HideFlags:2}
 
 # Page 14: Housing Custom Spawnpoints
 execute if score page chest_menu matches 14 if score spawnpoint_units_c_bottom_stairs settings matches 0 run replaceitem entity @s enderchest.0 firework_star{Enchantments:[{}],menu:1,page:14,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"Bottom Stairs","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gold","italic":false}','{"text":"Disabled","color":"gray","italic":false}']},HideFlags:35}
@@ -135,7 +135,7 @@ execute if score page chest_menu matches 14 run replaceitem entity @s enderchest
 execute if score page chest_menu matches 14 run replaceitem entity @s enderchest.14 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 14 run replaceitem entity @s enderchest.15 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 14 run replaceitem entity @s enderchest.16 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
-execute if score page chest_menu matches 14 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:14,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to the previous page","italic":false,"color":"white"}]']},HideFlags:2}
+execute if score page chest_menu matches 14 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:14,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to","italic":false,"color":"white"}]','[{"text":"the previous page","italic":false,"color":"white"}]']},HideFlags:2}
 
 
 # Page 15: Custom Spawnpoint Distance Pool
@@ -166,7 +166,7 @@ execute if score page chest_menu matches 15 run replaceitem entity @s enderchest
 execute if score page chest_menu matches 15 run replaceitem entity @s enderchest.14 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 15 run replaceitem entity @s enderchest.15 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 15 run replaceitem entity @s enderchest.16 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
-execute if score page chest_menu matches 15 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:15,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to the previous page","italic":false,"color":"white"}]']},HideFlags:2}
+execute if score page chest_menu matches 15 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:15,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to","italic":false,"color":"white"}]','[{"text":"the previous page","italic":false,"color":"white"}]']},HideFlags:2}
 
 # Page 16: Custom Bastion Rotation Pool
 execute if score page chest_menu matches 16 if score bastion_rot_c_0 practice matches 0 run replaceitem entity @s enderchest.0 firework_star{Enchantments:[{}],menu:1,page:16,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"0 Degrees","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gold","italic":false}','{"text":"Disabled","color":"gray","italic":false}']},HideFlags:35}
@@ -194,7 +194,7 @@ execute if score page chest_menu matches 16 run replaceitem entity @s enderchest
 execute if score page chest_menu matches 16 run replaceitem entity @s enderchest.14 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 16 run replaceitem entity @s enderchest.15 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 16 run replaceitem entity @s enderchest.16 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
-execute if score page chest_menu matches 16 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:16,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to the previous page","italic":false,"color":"white"}]']},HideFlags:2}
+execute if score page chest_menu matches 16 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:16,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to","italic":false,"color":"white"}]','[{"text":"the previous page","italic":false,"color":"white"}]']},HideFlags:2}
 # Page 17: Custom Housing Left Rampart Pool
 execute if score page chest_menu matches 17 if score units_left_rampart_c_triple bastion.settings matches 0 run replaceitem entity @s enderchest.0 firework_star{Enchantments:[{}],menu:1,page:17,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"Triple Chest","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gold","italic":false}','{"text":"Disabled","color":"gray","italic":false}']},HideFlags:35}
 execute if score page chest_menu matches 17 if score units_left_rampart_c_triple bastion.settings matches 1 run replaceitem entity @s enderchest.0 firework_star{menu:1,page:17,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"Triple Chest","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gray","italic":false}','{"text":"Disabled","color":"gold","italic":false}']},HideFlags:34}
@@ -219,7 +219,7 @@ execute if score page chest_menu matches 17 run replaceitem entity @s enderchest
 execute if score page chest_menu matches 17 run replaceitem entity @s enderchest.14 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 17 run replaceitem entity @s enderchest.15 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 17 run replaceitem entity @s enderchest.16 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
-execute if score page chest_menu matches 17 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:17,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to the previous page","italic":false,"color":"white"}]']},HideFlags:2}
+execute if score page chest_menu matches 17 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:17,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to","italic":false,"color":"white"}]','[{"text":"the previous page","italic":false,"color":"white"}]']},HideFlags:2}
 # Page 18: Custom Center Treasure Pool
 execute if score page chest_menu matches 18 if score treasure_center_c_hashtag bastion.settings matches 0 run replaceitem entity @s enderchest.0 firework_star{Enchantments:[{}],menu:1,page:18,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"Hashtag","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gold","italic":false}','{"text":"Disabled","color":"gray","italic":false}']},HideFlags:35}
 execute if score page chest_menu matches 18 if score treasure_center_c_hashtag bastion.settings matches 1 run replaceitem entity @s enderchest.0 firework_star{menu:1,page:18,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"Hashtag","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gray","italic":false}','{"text":"Disabled","color":"gold","italic":false}']},HideFlags:34}
@@ -246,7 +246,7 @@ execute if score page chest_menu matches 18 run replaceitem entity @s enderchest
 execute if score page chest_menu matches 18 run replaceitem entity @s enderchest.14 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 18 run replaceitem entity @s enderchest.15 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 18 run replaceitem entity @s enderchest.16 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
-execute if score page chest_menu matches 18 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:18,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to the previous page","italic":false,"color":"white"}]']},HideFlags:2}
+execute if score page chest_menu matches 18 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:18,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to","italic":false,"color":"white"}]','[{"text":"the previous page","italic":false,"color":"white"}]']},HideFlags:2}
 
 # Page 19: Custom Center Wall Pool
 execute if score page chest_menu matches 19 if score treasure_wall_c_basalte bastion.settings matches 0 run replaceitem entity @s enderchest.0 firework_star{Enchantments:[{}],menu:1,page:19,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"BasaltE","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gold","italic":false}','{"text":"Disabled","color":"gray","italic":false}']},HideFlags:35}
@@ -272,7 +272,7 @@ execute if score page chest_menu matches 19 run replaceitem entity @s enderchest
 execute if score page chest_menu matches 19 run replaceitem entity @s enderchest.14 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 19 run replaceitem entity @s enderchest.15 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 19 run replaceitem entity @s enderchest.16 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
-execute if score page chest_menu matches 19 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:19,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to the previous page","italic":false,"color":"white"}]']},HideFlags:2}
+execute if score page chest_menu matches 19 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:19,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to","italic":false,"color":"white"}]','[{"text":"the previous page","italic":false,"color":"white"}]']},HideFlags:2}
 # Page 20: Custom Stables Left Rampart Pool
 execute if score page chest_menu matches 20 if score stables_left_rampart_c_triple bastion.settings matches 0 run replaceitem entity @s enderchest.0 firework_star{Enchantments:[{}],menu:1,page:20,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"Triple Chest","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gold","italic":false}','{"text":"Disabled","color":"gray","italic":false}']},HideFlags:35}
 execute if score page chest_menu matches 20 if score stables_left_rampart_c_triple bastion.settings matches 1 run replaceitem entity @s enderchest.0 firework_star{menu:1,page:20,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"Triple Chest","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gray","italic":false}','{"text":"Disabled","color":"gold","italic":false}']},HideFlags:34}
@@ -294,7 +294,7 @@ execute if score page chest_menu matches 20 run replaceitem entity @s enderchest
 execute if score page chest_menu matches 20 run replaceitem entity @s enderchest.14 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 20 run replaceitem entity @s enderchest.15 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 20 run replaceitem entity @s enderchest.16 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
-execute if score page chest_menu matches 20 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:20,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to the previous page","italic":false,"color":"white"}]']},HideFlags:2}
+execute if score page chest_menu matches 20 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:20,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to","italic":false,"color":"white"}]','[{"text":"the previous page","italic":false,"color":"white"}]']},HideFlags:2}
 
 # Page 21: Custom Stables Middle Rampart Pool
 execute if score page chest_menu matches 21 if score stables_middle_rampart_c_triple bastion.settings matches 0 run replaceitem entity @s enderchest.0 firework_star{Enchantments:[{}],menu:1,page:21,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"Triple Chest","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gold","italic":false}','{"text":"Disabled","color":"gray","italic":false}']},HideFlags:35}
@@ -317,7 +317,7 @@ execute if score page chest_menu matches 21 run replaceitem entity @s enderchest
 execute if score page chest_menu matches 21 run replaceitem entity @s enderchest.14 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 21 run replaceitem entity @s enderchest.15 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 21 run replaceitem entity @s enderchest.16 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
-execute if score page chest_menu matches 21 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:21,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to the previous page","italic":false,"color":"white"}]']},HideFlags:2}
+execute if score page chest_menu matches 21 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:21,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to","italic":false,"color":"white"}]','[{"text":"the previous page","italic":false,"color":"white"}]']},HideFlags:2}
 
 # Page 22: Custom Stables Right Rampart Pool
 execute if score page chest_menu matches 22 if score stables_right_rampart_c_triple bastion.settings matches 0 run replaceitem entity @s enderchest.0 firework_star{Enchantments:[{}],menu:1,page:22,selection:1,Explosion:{Colors:[I;16755200]},display:{Name:'{"text":"Triple Chest","color":"yellow","italic":false}',Lore:['{"text":""}','{"text":"Enabled","color":"gold","italic":false}','{"text":"Disabled","color":"gray","italic":false}']},HideFlags:35}
@@ -340,4 +340,4 @@ execute if score page chest_menu matches 22 run replaceitem entity @s enderchest
 execute if score page chest_menu matches 22 run replaceitem entity @s enderchest.14 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 22 run replaceitem entity @s enderchest.15 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
 execute if score page chest_menu matches 22 run replaceitem entity @s enderchest.16 gray_stained_glass_pane{menu:1,display:{Name:'[{"text":""}]'}}
-execute if score page chest_menu matches 22 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:22,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to the previous page","italic":false,"color":"white"}]']},HideFlags:2}
+execute if score page chest_menu matches 22 run replaceitem entity @s enderchest.22 nether_star{menu:1,page:22,selection:11,display:{Name:'[{"text":"Back","italic":false,"color":"red"}]',Lore:['[{"text":""}]', '[{"text":"Click to return to","italic":false,"color":"white"}]','[{"text":"the previous page","italic":false,"color":"white"}]']},HideFlags:2}

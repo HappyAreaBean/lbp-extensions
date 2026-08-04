@@ -18,7 +18,8 @@ execute if score selection chest_menu matches 4 if score items chest_menu matche
 execute if score selection chest_menu matches 4 if score items chest_menu matches 1 run scoreboard players remove logger practice 1
 execute if score selection chest_menu matches 5 if score items chest_menu matches 2 run scoreboard players add id_piglins bastion.settings 1
 execute if score selection chest_menu matches 5 if score items chest_menu matches 1 run scoreboard players remove id_piglins bastion.settings 1
-execute if score selection chest_menu matches 6 run scoreboard players set page chest_menu 3
+execute if score selection chest_menu matches 6 unless score bastion settings matches 5 run scoreboard players set prev_settings_page chest_menu 4
+execute if score selection chest_menu matches 6 unless score bastion settings matches 5 run scoreboard players set page chest_menu 3
 execute if score selection chest_menu matches 7 run scoreboard players set page chest_menu 1
 
 # Reset clipping scores
