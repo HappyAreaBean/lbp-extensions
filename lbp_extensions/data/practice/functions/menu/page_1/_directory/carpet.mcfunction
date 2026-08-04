@@ -33,7 +33,7 @@ execute if score selection chest_menu matches 2 if score is_shift_click chest_me
 execute if score selection chest_menu matches 2 if score is_shift_click chest_menu matches 1 if score bastion settings matches 4 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
 
 # Clear shift click if custom opened
-execute if score selection chest_menu matches 2 if score is_shift_click chest_menu matches 1 run scoreboard players set selection chest_menu 0
+execute if score selection chest_menu matches 2 if score is_shift_click chest_menu matches 1 if score bastion settings matches 1..4 run scoreboard players set selection chest_menu 0
 execute if score selection chest_menu matches 1..2 if score is_shift_click chest_menu matches 1 run scoreboard players set is_shift_click chest_menu 0
 
 # Increment scores
