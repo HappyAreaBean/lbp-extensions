@@ -17,4 +17,3 @@ execute if score tick_warp settings matches 9 run tick warp 2700 function practi
 execute if score tick_warp settings matches 10 run tick warp 3000 function practice:_start/wait_for_movement/standard
 execute if score tick_warp settings matches 11 run tick warp 3300 function practice:_start/wait_for_movement/standard
 execute if score tick_warp settings matches 12 run tick warp 3600 function practice:_start/wait_for_movement/standard
-execute if score has_carpet practice matches 1 if score tick_warp settings matches 1.. run tick warp
