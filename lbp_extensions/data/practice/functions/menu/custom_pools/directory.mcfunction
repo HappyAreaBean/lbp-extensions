@@ -845,3 +845,20 @@ execute if score page chest_menu matches 22 if score sum bastion.temp matches 3 
 
 execute if score page chest_menu matches 22 if score selection chest_menu matches 11 run scoreboard players set page chest_menu 3
 execute if score page chest_menu matches 22 if score selection chest_menu matches 11 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
+
+# Page 23: Piedar Settings Selection Handlers
+# Selection 1: Piedar (Slot 10)
+execute if score page chest_menu matches 23 if score selection chest_menu matches 1 if score items chest_menu matches 2 run scoreboard players add piedar settings 1
+execute if score page chest_menu matches 23 if score selection chest_menu matches 1 if score items chest_menu matches 1 run scoreboard players remove piedar settings 1
+execute if score page chest_menu matches 23 if score selection chest_menu matches 1 if score piedar settings matches 3.. run scoreboard players set piedar settings 0
+execute if score page chest_menu matches 23 if score selection chest_menu matches 1 if score piedar settings matches ..-1 run scoreboard players set piedar settings 2
+
+# Selection 2: Piedar Distance (Slot 11)
+execute if score page chest_menu matches 23 if score selection chest_menu matches 2 if score items chest_menu matches 2 run scoreboard players add piedar_dist settings 1
+execute if score page chest_menu matches 23 if score selection chest_menu matches 2 if score items chest_menu matches 1 run scoreboard players remove piedar_dist settings 1
+execute if score page chest_menu matches 23 if score selection chest_menu matches 2 if score piedar_dist settings matches 4.. run scoreboard players set piedar_dist settings 0
+execute if score page chest_menu matches 23 if score selection chest_menu matches 2 if score piedar_dist settings matches ..-1 run scoreboard players set piedar_dist settings 3
+
+# Selection 11: Back (Slot 22)
+execute if score page chest_menu matches 23 if score selection chest_menu matches 11 run scoreboard players set page chest_menu 1
+execute if score page chest_menu matches 23 if score selection chest_menu matches 11 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1

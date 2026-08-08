@@ -53,10 +53,10 @@ execute if score selection chest_menu matches 4 if score items chest_menu matche
 execute if score selection chest_menu matches 4 if score items chest_menu matches 1 run scoreboard players remove terrain settings 1
 execute if score selection chest_menu matches 5 if score items chest_menu matches 2 run scoreboard players add random_gold bastion.settings 1
 execute if score selection chest_menu matches 5 if score items chest_menu matches 1 run scoreboard players remove random_gold bastion.settings 1
-execute if score selection chest_menu matches 6 if score items chest_menu matches 2 run scoreboard players add piedar settings 1
-execute if score selection chest_menu matches 6 if score items chest_menu matches 1 run scoreboard players remove piedar settings 1
-execute if score selection chest_menu matches 7 if score items chest_menu matches 2 run scoreboard players add piedar_dist settings 1
-execute if score selection chest_menu matches 7 if score items chest_menu matches 1 run scoreboard players remove piedar_dist settings 1
+execute if score selection chest_menu matches 6 if score items chest_menu matches 2 run scoreboard players add sat_reset practice 1
+execute if score selection chest_menu matches 6 if score items chest_menu matches 1 run scoreboard players remove sat_reset practice 1
+execute if score selection chest_menu matches 7 run scoreboard players set prev_settings_page chest_menu 1
+execute if score selection chest_menu matches 7 run scoreboard players set page chest_menu 23
 execute if score selection chest_menu matches 8 unless score bastion settings matches 5 run scoreboard players set prev_settings_page chest_menu 1
 execute if score selection chest_menu matches 8 unless score bastion settings matches 5 run scoreboard players set page chest_menu 3
 execute if score selection chest_menu matches 9 run scoreboard players set page chest_menu 2
@@ -87,6 +87,8 @@ execute if score piedar settings matches 3.. run scoreboard players set piedar s
 execute if score piedar settings matches ..-1 run scoreboard players set piedar settings 2
 execute if score piedar_dist settings matches 4.. run scoreboard players set piedar_dist settings 0
 execute if score piedar_dist settings matches ..-1 run scoreboard players set piedar_dist settings 3
+execute if score sat_reset practice matches 21.. run scoreboard players set sat_reset practice 0
+execute if score sat_reset practice matches ..-1 run scoreboard players set sat_reset practice 20
 
 # Further operations
 execute if score natural_mobs settings matches 0 run gamerule doMobSpawning true

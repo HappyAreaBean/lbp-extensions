@@ -28,13 +28,15 @@ execute store success score bool chest_menu run clear @s #practice:chest_menu{me
 execute if score bool chest_menu matches 1 run scoreboard players set page chest_menu 21
 execute store success score bool chest_menu run clear @s #practice:chest_menu{menu:1,page:22} 0
 execute if score bool chest_menu matches 1 run scoreboard players set page chest_menu 22
+execute store success score bool chest_menu run clear @s #practice:chest_menu{menu:1,page:23} 0
+execute if score bool chest_menu matches 1 run scoreboard players set page chest_menu 23
 
 # Check standard pages (1..4)
-execute unless score page chest_menu matches 10..22 store success score bool chest_menu run clear @s #practice:chest_menu{menu:1,page:1} 0
-execute unless score page chest_menu matches 10..22 if score bool chest_menu matches 1 run scoreboard players set page chest_menu 1
-execute unless score page chest_menu matches 10..22 store success score bool chest_menu run clear @s #practice:chest_menu{menu:1,page:2} 0
-execute unless score page chest_menu matches 10..22 if score bool chest_menu matches 1 run scoreboard players set page chest_menu 2
-execute unless score page chest_menu matches 10..22 store success score bool chest_menu run clear @s #practice:chest_menu{menu:1,page:3} 0
-execute unless score page chest_menu matches 10..22 if score bool chest_menu matches 1 run scoreboard players set page chest_menu 3
-execute unless score page chest_menu matches 10..22 store success score bool chest_menu run clear @s #practice:chest_menu{menu:1,page:4} 0
-execute unless score page chest_menu matches 10..22 if score bool chest_menu matches 1 run scoreboard players set page chest_menu 4
+execute unless score page chest_menu matches 10..23 store success score bool chest_menu run clear @s #practice:chest_menu{menu:1,page:1} 0
+execute unless score page chest_menu matches 10..23 if score bool chest_menu matches 1 run scoreboard players set page chest_menu 1
+execute unless score page chest_menu matches 10..23 store success score bool chest_menu run clear @s #practice:chest_menu{menu:1,page:2} 0
+execute unless score page chest_menu matches 10..23 if score bool chest_menu matches 1 run scoreboard players set page chest_menu 2
+execute unless score page chest_menu matches 10..23 store success score bool chest_menu run clear @s #practice:chest_menu{menu:1,page:3} 0
+execute unless score page chest_menu matches 10..23 if score bool chest_menu matches 1 run scoreboard players set page chest_menu 3
+execute unless score page chest_menu matches 10..23 store success score bool chest_menu run clear @s #practice:chest_menu{menu:1,page:4} 0
+execute unless score page chest_menu matches 10..23 if score bool chest_menu matches 1 run scoreboard players set page chest_menu 4
