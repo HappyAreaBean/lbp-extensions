@@ -14,6 +14,8 @@ A datapack to extend the features of llama's bastion practice map.
 - All piedar cases (with customization options?) (Not done)
 - Guaranteed 5 obsidian and 3 iron chests across the whole bastion (Not done)
 - Custom spawn locations (Not done)
+- Prevent breaking blocks in the hub (Not done)
+- Options for lava bastions like lava housing (Not sure if this should be a setting) (Not done)
 
 ### Disclaimer
 
