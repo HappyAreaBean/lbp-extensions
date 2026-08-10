@@ -14,7 +14,10 @@ execute unless score spawnpoint_custom settings = spawnpoint_custom settings run
 execute unless score tick_warp settings = tick_warp settings run scoreboard players set tick_warp settings 0
 execute unless score spawnpoint_dist settings = spawnpoint_dist settings run scoreboard players set spawnpoint_dist settings 0
 execute unless score practice_floor settings = practice_floor settings run scoreboard players set practice_floor settings 0
-execute unless score units_lava settings = units_lava settings run scoreboard players set units_lava settings 2
+execute unless score units_lava_menu settings = units_lava_menu settings run scoreboard players set units_lava_menu settings 0
+execute if score units_lava_menu settings matches 0 run scoreboard players set units_lava settings 2
+execute if score units_lava_menu settings matches 1 run scoreboard players set units_lava settings 1
+execute if score units_lava_menu settings matches 2 run scoreboard players set units_lava settings 0
 
 scoreboard objectives add practice dummy
 execute unless score has_carpet practice = has_carpet practice run scoreboard players set has_carpet practice 0
