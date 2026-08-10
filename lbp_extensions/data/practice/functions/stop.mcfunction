@@ -46,8 +46,7 @@ execute if score has_carpet practice matches 1 as @a run script run modify(playe
 
 function practice:soft_reset
 
-execute as @a in the_nether run tp @s 105 114.5 5 0 2.72
-
-execute as @a at @s run playsound entity.experience_orb.pickup player @s ~ ~ ~ 0.5 1.8
+execute as @a in the_nether run tp @s 0 300 0
+schedule function practice:_stop/teleport_to_hub 1t
 
 scoreboard players set running bastion.temp 0
