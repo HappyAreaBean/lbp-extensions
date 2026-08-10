@@ -11,6 +11,7 @@ A datapack to extend the features of llama's bastion practice map.
 - Dimmed item colors to indicate overridden settings
 - Choosing the randomized option pool for every setting that applies
 - Returning back from edit menus now put you back to where u entered them from
+- Added a tutorial to set up a bastion practice instance to the help message
 - All piedar cases (with customization options?) (Not done)
 - Guaranteed 5 obsidian and 3 iron chests across the whole bastion (Not done)
 - Custom spawn locations (Not done)
