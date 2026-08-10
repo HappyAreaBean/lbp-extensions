@@ -859,6 +859,15 @@ execute if score page chest_menu matches 23 if score selection chest_menu matche
 execute if score page chest_menu matches 23 if score selection chest_menu matches 2 if score piedar_dist settings matches 4.. run scoreboard players set piedar_dist settings 0
 execute if score page chest_menu matches 23 if score selection chest_menu matches 2 if score piedar_dist settings matches ..-1 run scoreboard players set piedar_dist settings 3
 
+# Selection 3: Piedar Coordinates (Slot 12)
+execute if score page chest_menu matches 23 if score selection chest_menu matches 3 if score items chest_menu matches 2 run scoreboard players add piedar_coords settings 1
+execute if score page chest_menu matches 23 if score selection chest_menu matches 3 if score items chest_menu matches 1 run scoreboard players remove piedar_coords settings 1
+execute if score page chest_menu matches 23 if score selection chest_menu matches 3 if score piedar_coords settings matches 4.. run scoreboard players set piedar_coords settings 0
+execute if score page chest_menu matches 23 if score selection chest_menu matches 3 if score piedar_coords settings matches ..-1 run scoreboard players set piedar_coords settings 3
+
+
+
 # Selection 11: Back (Slot 22)
 execute if score page chest_menu matches 23 if score selection chest_menu matches 11 run scoreboard players set page chest_menu 1
 execute if score page chest_menu matches 23 if score selection chest_menu matches 11 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
+

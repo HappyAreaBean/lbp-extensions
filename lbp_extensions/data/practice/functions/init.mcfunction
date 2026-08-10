@@ -152,3 +152,6 @@ execute unless score bastion_rot_c_0 practice = bastion_rot_c_0 practice run sco
 execute unless score bastion_rot_c_90 practice = bastion_rot_c_90 practice run scoreboard players set bastion_rot_c_90 practice 0
 execute unless score bastion_rot_c_180 practice = bastion_rot_c_180 practice run scoreboard players set bastion_rot_c_180 practice 0
 execute unless score bastion_rot_c_270 practice = bastion_rot_c_270 practice run scoreboard players set bastion_rot_c_270 practice 0
+
+# Initialize Piedar Coordinates log setting (0 = Enabled, 1 = Disabled)
+execute unless score piedar_coords settings = piedar_coords settings run scoreboard players set piedar_coords settings 3
