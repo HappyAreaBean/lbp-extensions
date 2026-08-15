@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "position": {
+            "x": {
+              "min": 1260,
+              "max": 1261
+            },
+            "y": {
+              "min": 100,
+              "max": 101
+            },
+            "z": {
+              "min": 11,
+              "max": 12
+            }
+          },
+          "dimension": "minecraft:the_nether",
+          "block": {
+            "block": "minecraft:polished_blackstone_button"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lbp_ext:leave_piedar_hub"
+  }
+}

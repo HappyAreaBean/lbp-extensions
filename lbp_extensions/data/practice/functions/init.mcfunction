@@ -49,6 +49,8 @@ scoreboard objectives add practice.piglins dummy
 # Create hub if it doesn't exist
 execute in the_nether run forceload remove all
 execute in the_nether run forceload add 100 0
+execute in the_nether run forceload add 1250 0
+
 function practice:_init/create_nether_hub
 
 # Set the players spawnpoint to the hub
@@ -155,3 +157,15 @@ execute unless score bastion_rot_c_270 practice = bastion_rot_c_270 practice run
 
 # Initialize Piedar Coordinates log setting (0 = Enabled, 1 = Disabled)
 execute unless score piedar_coords settings = piedar_coords settings run scoreboard players set piedar_coords settings 3
+
+# Load the custom Piedar Spawner Grid Lobby Room on reload
+function lbp_ext:load_piedar_hub
+
+# Initialize editing_config setting to 0 (not editing)
+execute unless score editing_config practice = editing_config practice run scoreboard players set editing_config practice 0
+
+# Initialize selected_config setting to 1 (default first config slot)
+execute unless score selected_config settings = selected_config settings run scoreboard players set selected_config settings 1
+
+# Initialize settings NBT storage list with 10 empty list slots
+execute unless data storage lbp_ext:settings configs run data modify storage lbp_ext:settings configs set value [[],[],[],[],[],[],[],[],[],[]]
