@@ -865,9 +865,162 @@ execute if score page chest_menu matches 23 if score selection chest_menu matche
 execute if score page chest_menu matches 23 if score selection chest_menu matches 3 if score piedar_coords settings matches 4.. run scoreboard players set piedar_coords settings 0
 execute if score page chest_menu matches 23 if score selection chest_menu matches 3 if score piedar_coords settings matches ..-1 run scoreboard players set piedar_coords settings 3
 
+# Selection 4: Piedar Layout (Slot 13)
+# Shift-click immediately opens page 24 (Piedar Custom Pool settings)
+execute if score page chest_menu matches 23 if score selection chest_menu matches 4 if score is_shift_click chest_menu matches 1 run scoreboard players set piedar_layout settings 2
+execute if score page chest_menu matches 23 if score selection chest_menu matches 4 if score is_shift_click chest_menu matches 1 run scoreboard players set prev_page chest_menu 23
+execute if score page chest_menu matches 23 if score selection chest_menu matches 4 if score is_shift_click chest_menu matches 1 run scoreboard players set page chest_menu 24
+execute if score page chest_menu matches 23 if score selection chest_menu matches 4 if score is_shift_click chest_menu matches 1 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
+execute if score page chest_menu matches 23 if score selection chest_menu matches 4 if score is_shift_click chest_menu matches 1 run scoreboard players set selection chest_menu 0
+
+execute if score page chest_menu matches 23 if score selection chest_menu matches 4 if score items chest_menu matches 2 run scoreboard players add piedar_layout settings 1
+execute if score page chest_menu matches 23 if score selection chest_menu matches 4 if score items chest_menu matches 1 run scoreboard players remove piedar_layout settings 1
+execute if score page chest_menu matches 23 if score selection chest_menu matches 4 if score piedar_layout settings matches 3.. run scoreboard players set piedar_layout settings 0
+execute if score page chest_menu matches 23 if score selection chest_menu matches 4 if score piedar_layout settings matches ..-1 run scoreboard players set piedar_layout settings 2
 
 
 # Selection 11: Back (Slot 22)
 execute if score page chest_menu matches 23 if score selection chest_menu matches 11 run scoreboard players set page chest_menu 1
 execute if score page chest_menu matches 23 if score selection chest_menu matches 11 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
+
+# Page 24: Piedar Custom Pool Config Selection Handlers
+# Selection 1: Config 1
+execute if score page chest_menu matches 24 if score selection chest_menu matches 1 run scoreboard players add piedar_layout_c_1 settings 1
+execute if score page chest_menu matches 24 if score selection chest_menu matches 1 if score piedar_layout_c_1 settings matches 2.. run scoreboard players set piedar_layout_c_1 settings 0
+execute if score page chest_menu matches 24 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 24 if score piedar_layout_c_1 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_2 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_3 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_4 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_5 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_6 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_7 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_8 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_9 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score sum bastion.temp matches 9 run scoreboard players set piedar_layout_c_1 settings 0
+
+# Selection 2: Config 2
+execute if score page chest_menu matches 24 if score selection chest_menu matches 2 run scoreboard players add piedar_layout_c_2 settings 1
+execute if score page chest_menu matches 24 if score selection chest_menu matches 2 if score piedar_layout_c_2 settings matches 2.. run scoreboard players set piedar_layout_c_2 settings 0
+execute if score page chest_menu matches 24 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 24 if score piedar_layout_c_1 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_2 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_3 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_4 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_5 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_6 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_7 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_8 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_9 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score sum bastion.temp matches 9 run scoreboard players set piedar_layout_c_2 settings 0
+
+# Selection 3: Config 3
+execute if score page chest_menu matches 24 if score selection chest_menu matches 3 run scoreboard players add piedar_layout_c_3 settings 1
+execute if score page chest_menu matches 24 if score selection chest_menu matches 3 if score piedar_layout_c_3 settings matches 2.. run scoreboard players set piedar_layout_c_3 settings 0
+execute if score page chest_menu matches 24 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 24 if score piedar_layout_c_1 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_2 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_3 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_4 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_5 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_6 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_7 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_8 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_9 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score sum bastion.temp matches 9 run scoreboard players set piedar_layout_c_3 settings 0
+
+# Selection 4: Config 4
+execute if score page chest_menu matches 24 if score selection chest_menu matches 4 run scoreboard players add piedar_layout_c_4 settings 1
+execute if score page chest_menu matches 24 if score selection chest_menu matches 4 if score piedar_layout_c_4 settings matches 2.. run scoreboard players set piedar_layout_c_4 settings 0
+execute if score page chest_menu matches 24 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 24 if score piedar_layout_c_1 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_2 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_3 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_4 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_5 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_6 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_7 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_8 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_9 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score sum bastion.temp matches 9 run scoreboard players set piedar_layout_c_4 settings 0
+
+# Selection 5: Config 5
+execute if score page chest_menu matches 24 if score selection chest_menu matches 5 run scoreboard players add piedar_layout_c_5 settings 1
+execute if score page chest_menu matches 24 if score selection chest_menu matches 5 if score piedar_layout_c_5 settings matches 2.. run scoreboard players set piedar_layout_c_5 settings 0
+execute if score page chest_menu matches 24 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 24 if score piedar_layout_c_1 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_2 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_3 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_4 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_5 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_6 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_7 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_8 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_9 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score sum bastion.temp matches 9 run scoreboard players set piedar_layout_c_5 settings 0
+
+# Selection 6: Config 6
+execute if score page chest_menu matches 24 if score selection chest_menu matches 6 run scoreboard players add piedar_layout_c_6 settings 1
+execute if score page chest_menu matches 24 if score selection chest_menu matches 6 if score piedar_layout_c_6 settings matches 2.. run scoreboard players set piedar_layout_c_6 settings 0
+execute if score page chest_menu matches 24 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 24 if score piedar_layout_c_1 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_2 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_3 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_4 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_5 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_6 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_7 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_8 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_9 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score sum bastion.temp matches 9 run scoreboard players set piedar_layout_c_6 settings 0
+
+# Selection 7: Config 7
+execute if score page chest_menu matches 24 if score selection chest_menu matches 7 run scoreboard players add piedar_layout_c_7 settings 1
+execute if score page chest_menu matches 24 if score selection chest_menu matches 7 if score piedar_layout_c_7 settings matches 2.. run scoreboard players set piedar_layout_c_7 settings 0
+execute if score page chest_menu matches 24 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 24 if score piedar_layout_c_1 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_2 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_3 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_4 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_5 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_6 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_7 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_8 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_9 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score sum bastion.temp matches 9 run scoreboard players set piedar_layout_c_7 settings 0
+
+# Selection 8: Config 8
+execute if score page chest_menu matches 24 if score selection chest_menu matches 8 run scoreboard players add piedar_layout_c_8 settings 1
+execute if score page chest_menu matches 24 if score selection chest_menu matches 8 if score piedar_layout_c_8 settings matches 2.. run scoreboard players set piedar_layout_c_8 settings 0
+execute if score page chest_menu matches 24 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 24 if score piedar_layout_c_1 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_2 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_3 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_4 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_5 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_6 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_7 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_8 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_9 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score sum bastion.temp matches 9 run scoreboard players set piedar_layout_c_8 settings 0
+
+# Selection 9: Config 9
+execute if score page chest_menu matches 24 if score selection chest_menu matches 9 run scoreboard players add piedar_layout_c_9 settings 1
+execute if score page chest_menu matches 24 if score selection chest_menu matches 9 if score piedar_layout_c_9 settings matches 2.. run scoreboard players set piedar_layout_c_9 settings 0
+execute if score page chest_menu matches 24 run scoreboard players set sum bastion.temp 0
+execute if score page chest_menu matches 24 if score piedar_layout_c_1 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_2 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_3 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_4 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_5 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_6 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_7 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_8 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score piedar_layout_c_9 settings matches 1 run scoreboard players add sum bastion.temp 1
+execute if score page chest_menu matches 24 if score sum bastion.temp matches 9 run scoreboard players set piedar_layout_c_9 settings 0
+
+# Selection 11: Back
+execute if score page chest_menu matches 24 if score selection chest_menu matches 11 run scoreboard players set page chest_menu 23
+execute if score page chest_menu matches 24 if score selection chest_menu matches 11 at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
+
 

@@ -154,9 +154,22 @@ execute unless score bastion_rot_c_0 practice = bastion_rot_c_0 practice run sco
 execute unless score bastion_rot_c_90 practice = bastion_rot_c_90 practice run scoreboard players set bastion_rot_c_90 practice 0
 execute unless score bastion_rot_c_180 practice = bastion_rot_c_180 practice run scoreboard players set bastion_rot_c_180 practice 0
 execute unless score bastion_rot_c_270 practice = bastion_rot_c_270 practice run scoreboard players set bastion_rot_c_270 practice 0
+# Initialize Piedar Layout setting (0 = Random, 1-9 = Configs 1-9, 10 = Custom)
+execute unless score piedar_layout settings = piedar_layout settings run scoreboard players set piedar_layout settings 0
 
 # Initialize Piedar Coordinates log setting (0 = Enabled, 1 = Disabled)
 execute unless score piedar_coords settings = piedar_coords settings run scoreboard players set piedar_coords settings 3
+
+# Initialize Piedar Layout Custom Pool configuration options (0 = Enabled, 1 = Disabled)
+execute unless score piedar_layout_c_1 settings = piedar_layout_c_1 settings run scoreboard players set piedar_layout_c_1 settings 0
+execute unless score piedar_layout_c_2 settings = piedar_layout_c_2 settings run scoreboard players set piedar_layout_c_2 settings 0
+execute unless score piedar_layout_c_3 settings = piedar_layout_c_3 settings run scoreboard players set piedar_layout_c_3 settings 0
+execute unless score piedar_layout_c_4 settings = piedar_layout_c_4 settings run scoreboard players set piedar_layout_c_4 settings 0
+execute unless score piedar_layout_c_5 settings = piedar_layout_c_5 settings run scoreboard players set piedar_layout_c_5 settings 0
+execute unless score piedar_layout_c_6 settings = piedar_layout_c_6 settings run scoreboard players set piedar_layout_c_6 settings 0
+execute unless score piedar_layout_c_7 settings = piedar_layout_c_7 settings run scoreboard players set piedar_layout_c_7 settings 0
+execute unless score piedar_layout_c_8 settings = piedar_layout_c_8 settings run scoreboard players set piedar_layout_c_8 settings 0
+execute unless score piedar_layout_c_9 settings = piedar_layout_c_9 settings run scoreboard players set piedar_layout_c_9 settings 0
 
 # Load the custom Piedar Spawner Grid Lobby Room on reload
 function lbp_ext:load_piedar_hub

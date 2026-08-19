@@ -5,6 +5,7 @@
         "fire_charge",
         "blaze_spawn_egg",
         "barrier",
-        "book"
+        "book",
+        "player_head"
     ]
 }

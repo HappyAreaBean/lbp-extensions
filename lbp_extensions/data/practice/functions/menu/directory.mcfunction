@@ -6,7 +6,7 @@ execute if score bool chest_menu matches 0 if score page chest_menu matches 1 ru
 execute if score bool chest_menu matches 0 if score page chest_menu matches 2 run function practice:menu/page_2/directory
 execute if score bool chest_menu matches 0 if score page chest_menu matches 3 run function practice:menu/page_3/directory
 execute if score bool chest_menu matches 0 if score page chest_menu matches 4 run function practice:menu/page_4/directory
-execute if score bool chest_menu matches 0 if score page chest_menu matches 10..23 run function practice:menu/custom_pools/directory
+execute if score bool chest_menu matches 0 if score page chest_menu matches 10..24 run function practice:menu/custom_pools/directory
 
 # Play button press sound
 execute if score selection chest_menu matches 1.. at @s run playsound ui.button.click master @s ~ ~ ~ 0.3 1
