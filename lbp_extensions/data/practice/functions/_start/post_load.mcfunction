@@ -78,8 +78,8 @@ execute if score units_lava settings matches 0..1 run function practice:_start/t
 # Teleport to the selected spawnpoint AEC
 execute as @a at @s run function practice:_start/teleport_to_spawnpoint
 
-# If terrain is enabled and piedar is enabled, place the piedar structure
-execute if score terrain settings matches 0 if score piedar settings matches 1.. run function practice:piedar/place
+# If piedar is enabled, place the piedar structure
+execute if score piedar settings matches 1.. run function practice:piedar/place
 
 # If rerun terrain is enabled, save the bastion and current terrain for later use
 execute if score rerun_terrain settings matches 0 as @e[type=area_effect_cloud, tag=!hub_entity, tag=!bastion_chest] at @s run tp ~ ~100 ~
