@@ -34,9 +34,7 @@ team empty no_collison
 scoreboard players reset @s deaths
 
 # If carpet is active: Instantly reset hunger, saturation, and exhaustion to full lobby status
-execute if score has_carpet practice matches 1 as @a run script run modify(player(), 'hunger', 20)
-execute if score has_carpet practice matches 1 as @a run script run modify(player(), 'saturation', 20)
-execute if score has_carpet practice matches 1 as @a run script run modify(player(), 'exhaustion', 0)
+execute if score has_carpet practice matches 1 run function lbp_ext:carpet/on_death
 execute if score has_carpet practice matches 1 run effect give @s minecraft:instant_health 1 4 true
 
 # If carpet is not active: Heal the player instantly to full health on respawn

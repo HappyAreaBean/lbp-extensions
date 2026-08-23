@@ -32,9 +32,7 @@ kill @e[tag=removal_filter]
 title @a times 7 15 7
 
 # If carpet is active: Instantly reset hunger, saturation, and exhaustion to full lobby status
-execute if score has_carpet practice matches 1 as @a run script run modify(player(), 'hunger', 20)
-execute if score has_carpet practice matches 1 as @a run script run modify(player(), 'saturation', 20)
-execute if score has_carpet practice matches 1 as @a run script run modify(player(), 'exhaustion', 0)
+execute if score has_carpet practice matches 1 run function lbp_ext:carpet/fully_reset
 
 function practice:soft_reset
 

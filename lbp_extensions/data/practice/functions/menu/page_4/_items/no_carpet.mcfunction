@@ -39,6 +39,6 @@ execute if score id_piglins bastion.settings matches 1 run replaceitem entity @s
 
 replaceitem entity @s enderchest.4 piglin_banner_pattern{menu:1,page:4,display:{Name:'[{"text":"Advanced Settings","italic":false,"color":"#9209FF"}]',Lore:['[{"text":""}]','[{"text":"Click on an item to cycle through its settings","italic":false,"color":"white"}]']},HideFlags:34}
 
-replaceitem entity @s enderchest.22 nether_star{menu:1,page:4,selection:6,display:{Name:'[{"text":"Bastion Settings","italic":false,"color":"red"}]',Lore:['[{"text":""}]','[{"text":"Click to edit","italic":false,"color":"white"}]']},HideFlags:2} 2
+replaceitem entity @s enderchest.22 nether_star{menu:1,page:4,selection:6,display:{Name:'[{"text":"Bastion Settings","italic":false,"color":"red"}]',Lore:['[{"text":""}]','[{"text":"Click to edit","italic":false,"color":"white"}]']},HideFlags:2}
 
 replaceitem entity @s enderchest.17 arrow{menu:1,page:4,selection:7,display:{Name:'[{"text":"Standard Settings","italic":false,"color":"gold"}]',Lore:['[{"text":""}]','[{"text":"Click to change page","italic":false,"color":"white"}]']},HideFlags:2}

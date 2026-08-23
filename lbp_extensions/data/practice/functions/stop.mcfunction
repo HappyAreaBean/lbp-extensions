@@ -37,9 +37,7 @@ execute as @e[tag=removal_filter] run data merge entity @s {Health:0.0f, DeathLo
 kill @e[tag=removal_filter]
 
 # IF CARPET IS ACTIVE: Instantly reset hunger, saturation, and exhaustion to full lobby status
-execute if score has_carpet practice matches 1 as @a run script run modify(player(), 'hunger', 20)
-execute if score has_carpet practice matches 1 as @a run script run modify(player(), 'saturation', 20)
-execute if score has_carpet practice matches 1 as @a run script run modify(player(), 'exhaustion', 0)
+execute if score has_carpet practice matches 1 run function lbp_ext:carpet/stop
 
 # IF CARPET IS NOT ACTIVE (Vanilla fallback):
 # (We don't give the saturation effect in the lobby so that starting saturation is not overwritten by lobby saturation)
