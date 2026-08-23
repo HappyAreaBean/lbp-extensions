@@ -18,6 +18,9 @@ execute if score bastion settings matches 5 run function practice:_start/custom_
 # Get the bastion rotation
 function practice:_start/get_rotation
 
+# Set chunk-aligned marker to have same rotation as bastion to allow for local coord usage
+function practice:_start/set_chunk_aligned_rotation
+
 # If terrain is disabled, generate the floor for the bastion
 execute if score terrain settings matches 1 positioned 0 127 0 run function practice:_start/terrain/place_floor
 
@@ -69,8 +72,16 @@ execute if score orig_c_stables_right_rampart bastion.temp matches 0..3 run scor
 execute if score terrain settings matches 1 run scoreboard players operation cur_bastion_no_t practice = bastion_type bastion.temp
 execute if score terrain settings matches 1 run scoreboard players operation cur_rotation_no_t practice = bastion_rotation bastion.temp
 
+# Check if the chunk_aligned marker is at a block center (.5) or block corner (.0)
+execute as @e[tag=chunk_aligned, limit=1] store result score #is_centered practice run data get entity @s Pos[0] 2
+scoreboard players set #two practice 2
+scoreboard players operation #is_centered practice %= #two practice
+
 # Place spawnpoint AEC's
-execute positioned ~0.5 ~0.5 ~0.5 run function practice:_start/place_spawnpoints
+# If marker is centered (willbe fork, coordinate ends in .5, result of % 2 is odd):
+execute unless score #is_centered practice matches 0 run execute positioned ~ ~0.5 ~ run function practice:_start/place_spawnpoints
+# If marker is not centered (normal LBP, coordinate ends in .0, result of % 2 is 0):
+execute if score #is_centered practice matches 0 run execute positioned ~0.5 ~0.5 ~0.5 run function practice:_start/place_spawnpoints
 
 # If lava flooding is enabled, place lava in the bastion
 execute if score units_lava settings matches 0..1 run function practice:_start/terrain/flood_bastion
