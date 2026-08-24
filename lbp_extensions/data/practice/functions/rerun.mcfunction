@@ -17,6 +17,7 @@ effect give @a jump_boost 1 255 true
 execute as @a run attribute @s generic.knockback_resistance base set 1
 
 execute as @a run function loadout:apply
+execute if score #has_state_inventory practice matches 1 as @a run function lbp_ext:apply_state_inventory
 
 scoreboard players reset @a damage_taken
 
