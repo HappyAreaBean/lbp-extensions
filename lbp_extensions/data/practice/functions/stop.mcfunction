@@ -48,3 +48,4 @@ execute as @a in the_nether run tp @s 0 300 0
 schedule function practice:_stop/teleport_to_hub 1t
 
 scoreboard players set running bastion.temp 0
+scoreboard players set #has_state_inventory practice 0
