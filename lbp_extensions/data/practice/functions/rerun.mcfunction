@@ -50,7 +50,6 @@ execute if score rerun_terrain settings matches 0 run function bastionbuilder:in
 execute if score rerun_terrain settings matches 0 run function bastionbuilder:internal/pre_place
 execute if score rerun_terrain settings matches 0 at @e[type=area_effect_cloud, tag=chunk_aligned, limit=1] run function practice:_start/terrain/load
 execute if score rerun_terrain settings matches 0 run function bastionbuilder:internal/post_place
-execute if score rerun_terrain settings matches 0 as @e[type=item] run data merge entity @s {PickupDelay: 40s, Age: 0s}
 
 # If rerun terrain is disabled, regenerate just the bastion
 execute if score stables_guarantee_good_gap bastion.settings matches 0 if score rerun_terrain settings matches 1 run function practice:_start/stables_gap_override

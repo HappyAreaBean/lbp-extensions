@@ -8,14 +8,11 @@ scoreboard players set rerun_terrain settings 0
 function lbp_ext:store_state_inventory
 scoreboard players set #has_state_inventory practice 1
 
-# 4. Prepare ground items with PickupDelay and Age tags so structure blocks save them natively
-execute as @e[type=item] run data merge entity @s {PickupDelay: 40s, Age: 0s}
-
-# 5. Save the bastion terrain, mobs, and ground items in structure blocks
+# 4. Save the bastion terrain, mobs, and ground items in structure blocks (preserving exact native item tags)
 execute as @e[type=area_effect_cloud, tag=!hub_entity, tag=!bastion_chest] at @s run tp ~ ~100 ~
 execute at @e[type=area_effect_cloud, tag=chunk_aligned, sort=nearest, limit=1] positioned ~ ~-100 ~ run function practice:_start/terrain/save
 execute as @e[type=area_effect_cloud, tag=!hub_entity, tag=!bastion_chest] at @s run tp ~ ~-100 ~
 
-# 6. Confirmation feedback and sound
+# 5. Confirmation feedback and sound
 tellraw @a {"text":"Saved State & Inventory","color":"green"}
 execute at @a run playsound ui.cartography_table.take_result player @a ~ ~ ~ 0.8 2
