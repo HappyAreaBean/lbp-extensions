@@ -1,7 +1,8 @@
 {
-    "replace": false,
-    "values": [
-        "red_carpet",
-        "fire_charge"
-    ]
+  "replace": false,
+  "values": [
+    "red_carpet",
+    "fire_charge",
+    "diamond"
+  ]
 }
