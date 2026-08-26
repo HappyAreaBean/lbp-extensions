@@ -9,6 +9,7 @@ function lbp_ext:store_state_inventory
 scoreboard players set #has_state_inventory practice 1
 
 # 4. Save the bastion terrain, mobs, and ground items in structure blocks (preserving exact native item tags)
+execute as @e[type=item] run tag @s add saved_item
 execute as @e[type=area_effect_cloud, tag=!hub_entity, tag=!bastion_chest] at @s run tp ~ ~100 ~
 execute at @e[type=area_effect_cloud, tag=chunk_aligned, sort=nearest, limit=1] positioned ~ ~-100 ~ run function practice:_start/terrain/save
 execute as @e[type=area_effect_cloud, tag=!hub_entity, tag=!bastion_chest] at @s run tp ~ ~-100 ~

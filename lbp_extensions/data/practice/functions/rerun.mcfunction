@@ -2,6 +2,9 @@ schedule clear practice:_start/run_tick
 schedule clear practice:_start/wait_for_movement/_standard/wait
 schedule clear practice:_start/clear_forceload
 
+# Clean up all item entities from the failed run before loading the terrain structure (except saved items)
+kill @e[type=item, tag=!saved_item]
+
 function practice:_start/wait_for_movement/_warp/stop_warping
 schedule clear practice:_start/wait_for_movement/_warp/reset_check
 
@@ -72,6 +75,9 @@ execute at @e[type=area_effect_cloud, tag=selected_spawnpoint, limit=1] run fill
 # Reset movement detection
 execute as @a run function practice:_start/movement_detection/set_home
 scoreboard players reset @a jumps
+
+# Clean up any items that spilled onto the ground during the terrain/structure block replacement (except saved items)
+kill @e[type=item, tag=!saved_item]
 
 execute if score has_carpet practice matches 0 run function practice:_start/wait_for_movement/standard
 execute if score has_carpet practice matches 1 run function practice:_start/wait_for_movement/warp
