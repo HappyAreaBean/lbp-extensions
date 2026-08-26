@@ -83,3 +83,4 @@ execute if score has_carpet practice matches 0 run function practice:_start/wait
 execute if score has_carpet practice matches 1 run function practice:_start/wait_for_movement/warp
 
 function practice:soft_reset
+scoreboard players set #reset_from_chat practice 0
