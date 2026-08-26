@@ -35,6 +35,5 @@ execute if score logger practice matches 2.. run scoreboard players set logger p
 execute if score logger practice matches ..-1 run scoreboard players set logger practice 1
 execute if score id_piglins bastion.settings matches 2.. run scoreboard players set id_piglins bastion.settings 0
 execute if score id_piglins bastion.settings matches ..-1 run scoreboard players set id_piglins bastion.settings 1
-execute if score #reverse_pick_throw practice matches 2.. run scoreboard players set #reverse_pick_throw practice 0
-execute if score #reverse_pick_throw practice matches ..-1 run scoreboard players set #reverse_pick_throw practice 1
-
+execute if score #reverse_pick_throw practice matches 3.. run scoreboard players set #reverse_pick_throw practice 0
+execute if score #reverse_pick_throw practice matches ..-1 run scoreboard players set #reverse_pick_throw practice 2

@@ -39,7 +39,5 @@ execute if score id_piglins bastion.settings matches 2.. run scoreboard players 
 execute if score id_piglins bastion.settings matches ..-1 run scoreboard players set id_piglins bastion.settings 1
 execute if score sat_reset practice matches 21.. run scoreboard players set sat_reset practice 0
 execute if score sat_reset practice matches ..-1 run scoreboard players set sat_reset practice 20
-execute if score #reverse_pick_throw practice matches 2.. run scoreboard players set #reverse_pick_throw practice 0
-execute if score #reverse_pick_throw practice matches ..-1 run scoreboard players set #reverse_pick_throw practice 1
-
-
+execute if score #reverse_pick_throw practice matches 3.. run scoreboard players set #reverse_pick_throw practice 0
+execute if score #reverse_pick_throw practice matches ..-1 run scoreboard players set #reverse_pick_throw practice 2
