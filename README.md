@@ -13,9 +13,9 @@ A datapack to extend the features of llama's bastion practice map.
 - Returning back from edit menus now put you back to where u entered them from
 - Added a tutorial to set up a bastion practice instance to the help message
 - Fixed breaking blocks in lobby after resets
-- Custom save states using the #states:save function
+- Custom save states using the `/function #states:save` command
 - New pickaxe reset mode options: Reversed and Confirm
-- Guaranteed 5 obsidian and 3 iron in total across the whole bastion (nuggets count, never in bottom treasure)
+- Guaranteed 5 obsidian and 3 iron in total across the bastion
 - Custom piedar options (Half done, not merged)
 
 ### Disclaimer
