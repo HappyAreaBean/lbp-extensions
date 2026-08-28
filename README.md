@@ -2,21 +2,33 @@
 
 A datapack to extend the features of llama's bastion practice map.
 
-# Features
+## Features
 
 - Right click menu items to go back
 - Starting saturation selector (0-20)
 - Guarantee triple rampart and good gap functions for bridge and stables
-- Enchant glint to indicate option is enabled
+- Enchant glint to indicate that an option is enabled
 - Dimmed item colors to indicate overridden settings
-- Choosing the randomized option pool for every setting that applies
-- Returning back from edit menus now put you back to where u entered them from
+- Made returning back from edit menus put you back to where you entered them from
+- Fixed breaking blocks in lobby after resetting
 - Added a tutorial to set up a bastion practice instance to the help message
-- Fixed breaking blocks in lobby after resets
-- Custom save states using the `/function #states:save` command
-- New pickaxe reset mode options: Reversed and Confirm
-- Guaranteed 5 obsidian and 3 iron in total across the bastion
+- Choosing the randomized option pool for every setting that applies
+  - Shift click items with multiple options to edit the 'Custom' random pool for it
+- Added an option to configure pickaxe reset behavior:
+  - Normal → throw pickaxe = lobby, crouch throw = rerun
+  - Reversed → throw pickaxe = rerun, crouch throw = lobby
+  - Confirm → show a chat message you can click on to rerun or go back to lobby
+- Added save states using the `/function #states:save` command:
+  - 'Rerun' (shift throw pick on Normal mode) to return to the exact saved state
+  - Dying puts you back in the saved state
+  - Reset the run to exit the saved state
+- Added an option to enable Ranked Guaranteed Loot (enabled by default):
+  - Guarantees 5 obsidian and 3 iron across all bastion chests
+  - Iron can be in the form of nuggets, and lower treasure is never intended
+
+## Planned Changes
 - Custom piedar options (Half done, not merged)
+- Additional run info after a run is done (e.g. fire res count)
 
 ### Disclaimer
 
