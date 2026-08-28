@@ -95,6 +95,7 @@ execute unless score id_piglins bastion.settings = id_piglins bastion.settings r
 execute unless score guarantee_loot bastion.settings = guarantee_loot bastion.settings run scoreboard players set guarantee_loot bastion.settings 1
 
 scoreboard players set running bastion.temp 0
+scoreboard players set #death_respawn_rerun practice 0
 
 # Initialize Custom Spawnpoint Pool scores
 execute unless score spawnpoint_bridge_c_chalice settings = spawnpoint_bridge_c_chalice settings run scoreboard players set spawnpoint_bridge_c_chalice settings 0
