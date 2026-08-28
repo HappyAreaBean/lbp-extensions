@@ -1,3 +1,6 @@
+scoreboard players set #silence_feedback practice 1
+gamerule sendCommandFeedback false
+
 # 1. Teleport selected spawnpoint to player position and rotation
 tp @e[type=area_effect_cloud, tag=selected_spawnpoint, sort=nearest, limit=1] ~ ~ ~ ~ ~
 
@@ -17,3 +20,5 @@ execute as @e[type=area_effect_cloud, tag=!hub_entity, tag=!bastion_chest] at @s
 # 5. Confirmation feedback and sound
 tellraw @a {"text":"Saved State & Inventory","color":"green"}
 execute at @a run playsound ui.cartography_table.take_result player @a ~ ~ ~ 0.8 2
+
+schedule function lbp_ext:enable_feedback 1t
