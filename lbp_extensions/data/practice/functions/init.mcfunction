@@ -29,6 +29,12 @@ scoreboard objectives add dropped_gol_pick minecraft.dropped:minecraft.golden_pi
 scoreboard objectives add dropped_sto_pick minecraft.dropped:minecraft.stone_pickaxe
 scoreboard objectives add dropped_woo_pick minecraft.dropped:minecraft.wooden_pickaxe
 scoreboard objectives add dropped_net_pick minecraft.dropped:minecraft.netherite_pickaxe
+scoreboard objectives add dropped_dia_axe minecraft.dropped:minecraft.diamond_axe
+scoreboard objectives add dropped_iro_axe minecraft.dropped:minecraft.iron_axe
+scoreboard objectives add dropped_gol_axe minecraft.dropped:minecraft.golden_axe
+scoreboard objectives add dropped_sto_axe minecraft.dropped:minecraft.stone_axe
+scoreboard objectives add dropped_woo_axe minecraft.dropped:minecraft.wooden_axe
+scoreboard objectives add dropped_net_axe minecraft.dropped:minecraft.netherite_axe
 scoreboard objectives add deaths deathCount
 
 scoreboard objectives add playerpos dummy
