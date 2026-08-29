@@ -65,6 +65,8 @@ execute if score stables_guarantee_good_gap bastion.settings matches 0 run funct
 execute if score stables_guarantee_triple bastion.settings matches 1 run function practice:_start/stables_rampart_restore
 execute if score bridge_guarantee_triple bastion.settings matches 1 run function practice:_start/bridge_restore
 
+function lbp_ext:kill_duplicate_mobs
+
 
 
 
