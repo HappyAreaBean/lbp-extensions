@@ -13,6 +13,7 @@ difficulty easy
 function practice:_start/silent_gamemode/adventure
 
 team join no_collison @a
+team join no_collison @e[type=!player,type=!area_effect_cloud,type=!armor_stand,type=!item]
 
 effect give @a fire_resistance 1000000 0 true
 effect give @a jump_boost 1 255 true
