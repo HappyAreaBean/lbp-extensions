@@ -18,13 +18,16 @@ A datapack to extend the features of llama's bastion practice map.
   - Normal → throw pickaxe = lobby, crouch throw = rerun
   - Reversed → throw pickaxe = rerun, crouch throw = lobby
   - Confirm → show a chat message you can click on to rerun or go back to lobby
-- Added save states using the `/function #states:save` command:
+- Added save states by crouch throwing an axe:
   - 'Rerun' (shift throw pick on Normal mode) to return to the exact saved state
   - Dying puts you back in the saved state
   - Reset the run to exit the saved state
 - Added an option to enable Ranked Guaranteed Loot (enabled by default):
   - Guarantees 5 obsidian and 3 iron across all bastion chests
   - Iron can be in the form of nuggets, and lower treasure is never intended
+- Ways to access some features using commands in runs:
+  - `/function #states:save` -> Does the same thing as crouch throwing an axe to save state
+  - `/function #mode:toggle` -> Toggles between 'Normal' and 'Reversed' modes
 
 ## Planned Changes
 - Custom piedar options (Half done, not merged)
