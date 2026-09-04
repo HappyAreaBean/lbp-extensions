@@ -2,6 +2,13 @@
 
 A datapack to extend the features of llama's bastion practice map.
 
+## How to use
+
+1. Download the latest release [here](https://github.com/awesome-03/lbp-extensions/releases/latest/download/lbp_extensions.zip/)
+2. Open your instance folder, click the `saves` folder and find your bastion map folder
+3. Extract the zip you downloaded and put it in your world's `datapacks` folder
+4. Join the world and run the `/replay` command
+
 ## Features
 
 - Right click menu items to go back
