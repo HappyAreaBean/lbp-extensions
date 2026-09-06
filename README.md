@@ -39,6 +39,19 @@ A datapack to extend the features of llama's bastion practice map.
 ## Planned Changes
 - Custom piedar options (Half done, not merged)
 - Additional run info after a run is done (e.g. fire res count)
+- Helper commands:
+  - Make mode toggle able to switch to Confirm mode
+  - Command to get crossbow, sword, and paralyzed piglin spawn eggs
+  - Command to give potion (?) to spawn a pig on a specific block (?) for testing late pig states
+
+**Fixes:**
+- Remove the body of the dead duplicated piglins so they don't appear
+- A bug causing you to stay in creative after resetting to savestate while tick warp is enabled
+- Verify that the piglin aggro timers don't get messed up by savestates (I forgot if I did this or not)
+
+## SUGGESTIONS
+
+If you have any suggestions, you can make an issue here or ping me on discord with them.
 
 ### Disclaimer
 
